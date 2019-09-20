@@ -1,0 +1,16 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+
+#avengers-rpg {
+    background: url(../images/avengers-bg.png) no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+#avengers-rpg img {
+    margin-top: 20px;
+    margin-left: 400px;
+    width: 550px;
+}

@@ -22,9 +22,11 @@
         <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-myPrimary">
+    <div id="about-page"></div>
 
+    
     <!-- ANCHOR NAV -->
-    <nav class="navbar navbar-expand-lg bg-myPrimary border-mySecondary-bottom">
+    <nav class="navbar navbar-expand-lg bg-myPrimary border-mySecondary-bottom sticky-top">
         <div class="container">
             <div class="rounded bg-mySecondary text-myPrimary">
             <a class="navbar-brand font-anton px-3 m-0" href="#landing-page">JM</a>
@@ -36,7 +38,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link home-link px-lg-4 border-mySecondary-right" href="#about-page">ABOUT <span class="sr-only">(current)</span></a>
+                    <a class="nav-link home-link pr-lg-4 border-mySecondary-right" href="#about-page">ABOUT <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link portfolio-link px-lg-4 border-mySecondary-right" href="#portfolio-page">PORTFOLIO</a>
@@ -48,9 +50,8 @@
         </div>
     </nav>
 
-    <div id="about-page">
     <!-- Heading -->
-    <div class="container mt-3">
+    <div class="container mt-3 pb-5">
         <div class="row">
             <div class="col-lg-6 pl-0 border-mySecondary-left pt-4 text-left">
                  <h1 class="display-3 font-fjalla ml-3 text-myFifth">JORDAN McCOLLAM</h1>
@@ -62,12 +63,12 @@
         </div>
         <div class="row border-mySecondary-left pb-5">
             <div class="col-2 col-lg-1 px-0">
-                <a class="contact-tab text-myPrimary bg-mySecondary" href="#" role="button">
+                <a class="contact-tab text-myPrimary bg-mySecondary" href="#contact-page" role="button">
                     <i class="fas fa-envelope fa-2x"></i>
                 </a>
                 <div class="my-4"></div>
                 <a class="contact-tab text-myPrimary bg-mySecondary" href="#" role="button">
-                    <i class="fas fa-phone fa-2x"></i>
+                        <i class="fas fa-phone fa-2x"></i>
                 </a>
                 <div class="my-4"></div>
                 <a class="contact-tab text-myPrimary bg-mySecondary" href="#" role="button">
@@ -87,9 +88,137 @@
             </div>
         </div>
     </div>
-    </div>
 
     
+    <!-- ANCHOR Portfolio -->
+    <div id="portfolio-page"></div>
+        <div class="container-fluid bg-gradient py-5">
+            <div class="container">
+                <!-- <div class="overlay-secondary px-4"> -->
+                <div class="row">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4 text-center">
+                        <h1 class="display-4 font-fjalla text-myFifth pb-1 pt-5">PORTFOLIO</h1>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+                <div class="row mt-2 pb-5">
+                    <div class="col-md-6 col-lg-4 text-center">
+                        <figure>
+                            <img src="images/avengers-rpg-2.png" alt="Avengers RPG" class="project-thumb" id="avengers-rpg">
+                            <figcaption>
+                                <h2 class="text-myThird font-yanone pt-5 display-4">Avengers RPG</h2>
+
+                                <h4 class="text-myFifth font-yanone px-4">A click based RPG game themed around the Avengers</h4>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-6 col-lg-4 text-center">
+                        <figure>
+                            <img src="images/train-schedule.jpg" alt="Train Scheduler" class="project-thumb">
+                            <figcaption>
+                                <h2 class="text-myFifth font-yanone pt-5 display-4">Train Scheduler</h2>
+                                <h4 class="text-myFourth font-yanone px-4">Create a new train schedule and the app tells you when your train arrives</h4>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-6 col-lg-4 text-center">
+                        <figure>
+                            <img src="images/studio-fx.JPG" alt="McCollam Mixing" class="project-thumb">
+                            <figcaption>
+                                <h2 class="text-myFourth font-yanone pt-5 display-4">McCollam Mixing</h2>
+                                <h4 class="text-myThird font-yanone px-4">Hire a mix engineer and sample his work</h4>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-6 col-lg-4 text-center">
+                        <figure>
+                            <img src="images/stitch2.png" alt="Stitch Fix" class="project-thumb">
+                            <figcaption>
+                                <h2 class="text-myThird font-yanone pt-5 display-4">Stich Smith</h2>
+                                <h4 class="text-myFourth font-yanone px-4">Take the stress out of getting dressed</h4>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-6 col-lg-4 text-center">
+                        <figure>
+                            <img src="images/hangman.png" alt="Disney Hangman" class="project-thumb">
+                            <figcaption>
+                                <h2 class="text-myFifth font-yanone pt-5 display-4">Disney Hangman</h2>
+                                <h4 class="text-myThird font-yanone px-4">The classic game of hangman themed around Disney</h4>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-6 col-lg-4 text-center">
+                        <figure>
+                            <img src="images/studio-fx.JPG" alt="McCollam Mixing" class="project-thumb">
+                            <figcaption>
+                                <h2 class="text-myFourth font-yanone pt-5 display-4">McCollam Mixing</h2>
+                                <h4 class="text-myFifth font-yanone px-4">Hire a mix engineer and sample his work</h4>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    <div id="contact-page">
+        <div class="container-fluid bg-mySecondary pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-4 font-fjalla text-myPrimary pb-1 pt-5">CONTACT</h1>
+                    </div>
+                </div>
+                <!-- <div class="container-fluid bg-myPrimary mb-5 pb-5"> -->
+                    <div class="row">
+                        <div class="col-3 col-lg-1 pt-1 text-center top-tabs active-tab">
+                            <i class="fas fa-envelope fa-2x"></i>
+                        </div>
+                        <div class="col-3 col-lg-1 pt-1 text-center top-tabs hover-tab">
+                                <i class="fas fa-phone fa-2x"></i>
+                        </div>
+                        <div class="col-3 col-lg-1 pt-1 text-center top-tabs hover-tab">
+                            <i class="fab fa-github fa-2x"></i>
+                        </div>
+                        <div class="col-3 col-lg-1 pt-1 text-center top-tabs hover-tab">
+                            <i class="fab fa-linkedin-in fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-myPrimary pb-5 pt-3">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-lg-8 email-page">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="email" class="font-fjalla text-myFifth">Email:</label>
+                                    <input type="email" id="email" class="form-control">
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="subject" class="font-fjalla text-myThird">Subject:</label>
+                                    <input type="text" id="subject" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="font-fjalla text-myFourth">Message:</label>
+                                <textarea id="message" class="form-control" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success font-fjalla"><i class="fas fa-paper-plane"></i> Send</button>
+                        </form>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-4 profile text-center">
+                        <img src="images/me.jpg" alt="Profile-Image" class="rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 <!-- BOOTSTRAP JS -->

@@ -169,12 +169,10 @@
     border-left: #41b853 3px solid;
 }
 .btn-myFourth {
-    color: white;
     background: #41b853;
 }
 .btn-myFourth:hover {
-    color: white;
-    background: #41b853;
+    background: #379c47;
 }
 .btn-outline-myFourth {
     color: #41b853;

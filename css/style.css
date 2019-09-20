@@ -45,10 +45,14 @@ html {
     from, to { border-color: transparent }
     50% { border-color: #efa500; }
   }
+
 @media only screen and (max-width: 992px) {
-.typewriter p {
-    font-size: 17px;
-}
+    .typewriter p {
+        font-size: 17px;
+    }
+    .nav-link {
+        border: #161b40;
+    }
 }
 
 
@@ -78,4 +82,70 @@ nav .contact-link:hover {
 .navbar-brand:hover {
     font-size: 30px;
     color: #161b40;
+}
+
+/* ANCHOR PORTFOLIO */
+.project-thumb {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+}
+
+
+figcaption {
+    opacity: 0;
+    background: #161b40ec;
+    position: absolute;
+    top: 0;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    transition: all .8s;
+}
+figcaption:hover {
+    opacity: 1;
+}
+
+figure {
+    position: relative;
+}
+
+.bg-gradient {
+    background: linear-gradient(#161b40, #efa500);
+}
+
+
+/* ANCHOR CONTACT */
+.top-tabs {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: #161b40 solid 1px;
+    color: #161b40;
+}
+.hover-tab-2:hover {
+    color: #f40058;
+}
+.hover-tab-1:hover {
+    color: #41b853;
+}
+.hover-tab-3:hover {
+    color: #43bee5;
+}
+
+.active-tab {
+    background: #161b40;
+    color: #efa500;
+}
+.hover-tab:hover {
+    background: #161b40;
+    color: #efa500;
+    cursor: pointer;
+}
+
+label {
+    font-size: 25px;
+}
+
+.profile img {
+    width: 250px;
 }
