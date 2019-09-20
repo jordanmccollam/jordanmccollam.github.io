@@ -4,22 +4,23 @@ body {
     font-size: 18px;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
+/* ANCHOR CONTACT TABS */
 .contact-tab {
     padding: 20px 10px 9px 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     transition: all 0.5s;
 }
-
-.hover-text {
-    font-size: 28px;
-}
-
 .contact-tab:hover {
     padding: 20px 10px 9px 30px;
     text-decoration: none;
     color: #161b40;
 }
+
 
 /* TYPING ANIMATION */
 .typewriter p {
@@ -50,6 +51,11 @@ body {
 }
 }
 
+
+/* ANCHOR NAV */
+nav {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
 nav a {
     color: #efa500;
 }
@@ -59,8 +65,11 @@ nav a:hover {
 nav .home-link:hover {
     border-bottom: #f40058 solid 1px;
 }
-nav .link-link:hover {
+nav .portfolio-link:hover {
     border-bottom: #41b853 solid 1px;
+}
+nav .contact-link:hover {
+    border-bottom: #43bee5 solid 1px;
 }
 .navbar-brand {
     font-size: 30px;
