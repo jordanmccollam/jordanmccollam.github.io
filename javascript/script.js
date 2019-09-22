@@ -46,6 +46,27 @@ $(document).ready(function() {
         $(".email-tab").addClass("active-tab");
     }
 
+    // ANCHOR CONTACT FORM
+    $("#contact-submit").on("click", function() {
+        var email = $("#email").val();
+        var subject = $("#subject").val();
+        var message = $("#message").val();
+        
+
+        if (email.length >= 5 && email.includes("@") && email.includes(".")) {}
+        else {
+            event.preventDefault();
+            $(".error-message").html("Email is not valid");
+            $(".modal").modal("show");
+        }
+
+        if (message.length == 0) {
+            event.preventDefault();
+            $(".error-message").html("Please include a message");
+            $(".modal").modal("show");
+        }
+    })
+
 
 // END of jQuery
 })
