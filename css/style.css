@@ -56,8 +56,10 @@ html {
 }
 
 .fade-in {
-    animation: fadein 8s;
+    /* animation: fadein 8s; */
+    display: none;
 }
+
 @keyframes fadein {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -93,33 +95,37 @@ nav .contact-link:hover {
 }
 
 /* ANCHOR PORTFOLIO */
-.project-thumb {
-    width: 100%;
-    height: 250px;
-    border-radius: 15px;
-}
 
-
-figcaption {
-    opacity: 0;
-    background: #161b40ec;
-    position: absolute;
-    top: 0;
-    border-radius: 15px;
+/* video */
+video {
+    /* width: 500px; */
     height: 100%;
     width: 100%;
-    transition: all .8s;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+    opacity: 0;
+    transition: 1s all;
 }
-figcaption:hover {
+video:hover {
     opacity: 1;
-}
-
-figure {
-    position: relative;
 }
 
 .bg-gradient {
     background: linear-gradient(#161b40, #efa500);
+}
+.project {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+}
+.project-label {
+    position: absolute;
+    top: -40px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
 }
 
 
@@ -156,4 +162,39 @@ label {
 
 .profile img {
     width: 250px;
+}
+
+.back-to-top a {
+    color: rgb(139, 139, 139);
+    text-decoration: none;
+}
+.back-to-top a:hover {
+    color: rgb(112, 112, 112);
+}
+
+
+/* ANCHOR PORTFOLIO THUMBS */
+.avengers-rpg {
+    background: url(../images/avengers-rpg-2.png) center;
+    background-size: cover;
+}
+.train-schedule {
+    background: url(../images/train-schedule.jpg) center;
+    background-size: cover;
+}
+.stitch-smith {
+    background: url(../images/stitchsmith.jpg) center;
+    background-size: cover;
+}
+.hangman {
+    background: url(../images/disney.jpg) center;
+    background-size: cover;
+}
+.giphy {
+    background: url(../images/failbanner.jpg);
+    background-size: 50px;
+}
+.trivia {
+    background: url(../images/trivia.jpg) center;
+    background-size: cover;
 }
