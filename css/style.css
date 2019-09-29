@@ -198,3 +198,7 @@ label {
     background: url(../images/trivia.jpg) center;
     background-size: cover;
 }
+.liri {
+    background: url(../images/liri.png) center;
+    background-size: cover;
+}
