@@ -14,7 +14,7 @@ I'm an aspiring developer studying at Vanderbilt University in Nashville, TN. I 
 ---
 
 ### Contributors
-- Jordan McCollam <jordy.mccollam@gmail.com>
+* Jordan McCollam / <jordy.mccollam@gmail.com>
 
 
 
