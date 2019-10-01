@@ -11,6 +11,11 @@ I'm an aspiring developer studying at Vanderbilt University in Nashville, TN. I 
 * Links and screenshots of projects Jordan has worked on
 * Aesthetic design to showcase coding skills
 
+---
+
+### Contributors
+- Jordan McCollam <jordy.mccollam@gmail.com>
+
 
 
 
