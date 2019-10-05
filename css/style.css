@@ -85,13 +85,17 @@ nav .portfolio-link:hover {
 nav .contact-link:hover {
     border-bottom: #43bee5 solid 1px;
 }
-.navbar-brand {
+/* .navbar-brand {
     font-size: 30px;
     color: #161b40;
 }
 .navbar-brand:hover {
     font-size: 30px;
     color: #161b40;
+} */
+
+.navbar-brand img {
+    width: 45px;
 }
 
 /* ANCHOR PORTFOLIO */
