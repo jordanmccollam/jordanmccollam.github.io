@@ -1,3 +1,6 @@
+var test = "Hello World!";
+var testNum = 100
+
 $(document).ready(function() {
 
     // ANCHOR Hover over Videos
