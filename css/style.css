@@ -221,3 +221,7 @@ label {
     background: url(../images/friendfinder.png) center;
     background-size: cover;
 }
+.ready-up {
+    background: url(../images/readyUp.png) center;
+    background-size: cover;
+}
