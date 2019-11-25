@@ -178,9 +178,6 @@ label {
 
 
 /* ANCHOR PORTFOLIO THUMBS */
-#exampleid {
-    
-}
 .avengers-rpg {
     background: url(../images/avengers-rpg-2.png) center;
     background-size: cover;
@@ -223,5 +220,9 @@ label {
 }
 .ready-up {
     background: url(../images/readyUp.png) center;
+    background-size: cover;
+}
+.news {
+    background: url(../images/news.png) #ebe3c5 center;
     background-size: cover;
 }
