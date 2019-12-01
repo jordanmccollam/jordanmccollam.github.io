@@ -13,6 +13,12 @@ I'm an aspiring developer studying at Vanderbilt University in Nashville, TN. I 
 
 ---
 
+### Technolgies
+- HTML
+- JavaScript + jQuery
+- Bootstrap + CSS
+*(To see more technolgies in use, see projects in Portfolio)*
+
 ### Contributors
 * Jordan McCollam / <jordy.mccollam@gmail.com>
 
