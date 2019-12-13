@@ -202,10 +202,6 @@ label {
     background: url(../images/trivia.jpg) center;
     background-size: cover;
 }
-.liri {
-    background: url(../images/liri.png) center;
-    background-size: cover;
-}
 .batbreak {
     background: url(../images/batbreak.png) center;
     background-size: cover;
@@ -225,4 +221,7 @@ label {
 .news {
     background: url(../images/news.png) #ebe3c5 center;
     background-size: cover;
+}
+.bugtracker {
+    background: url(../images/bugtracker.png) #ebe3c5 center;
 }
