@@ -1,288 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jordan McCollam</title>
-        <!-- FAVICON -->
-        <link rel="shortcut icon" type="image/png" href="images/jmAsset 1.png">
-
-        <!-- FONT AWESOME -->
-        <script src="https://kit.fontawesome.com/a2cbb46ec8.js" crossorigin="anonymous"></script>
-
-        <!-- GOOGLE FONTS -->
-        <link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Source+Code+Pro|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
-
-        <!-- BOOTSTRAP CDN -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-        <!-- CUSTOM CSS -->
-        <link rel="stylesheet" href="css/theme.css">
-        <link rel="stylesheet" href="css/style.css">
+    <title>Jordan McCollam | Portfolio</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="./images/logo.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/a2cbb46ec8.js" crossorigin="anonymous"></script>
+    <!-- BootSwatch -->
+    <link rel="stylesheet" href="./css/bootstrap-superhero.css">
+    <!-- Animations -->
+    <link rel="stylesheet" href="./css/animation.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="bg-myPrimary">
-    <div id="about-page"></div>
 
-    
-    <!-- ANCHOR NAV -->
-    <nav class="navbar navbar-expand-lg bg-myPrimary border-mySecondary-bottom sticky-top">
+<body>
+
+    <!-- SIDE MENU -->
+    <div class="side-menu d-none d-lg-block">
+        <a href="./index.html"><img src="./images/logo.png" alt="logo" width="100"
+                class="p-3 logo border-bottom border-primary"></a>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="#about" class="bg-primary" id="about-tab"><i class="fas fa-user-circle fa-2x"></i></a>
+            <a href="#projects" class="bg-primary" id="projects-tab"><i class="fas fa-project-diagram fa-2x"></i></a>
+            <a href="#contact" class="bg-primary" id="contact-tab"><i class="fas fa-envelope fa-2x"></i></a>
+            <a href="https://github.com/jordanmccollam" target="_blank" class="bg-primary" id="github-tab"><i
+                    class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/jordan-mccollam-8141a618a/" target="_blank" class="bg-primary"
+                id="linkedin-tab"><i class="fab fa-linkedin-in fa-2x"></i></a>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+
+        <!-- ABOUT PAGE -->
+        <!-- Header -->
+        <div class="row" id="about">
+            <div class="col-lg-10 font-primary text-right text-secondary">
+                <h1 class="display-2">Jordan McCollam</h1>
+                <h2>Full Stack Developer</h2>
+            </div>
+            <div class="col-lg-2 text-secondary d-none d-lg-block">
+                <i class="fas fa-user-circle header-icon"></i>
+            </div>
+        </div>
+
+        <!-- Content -->
         <div class="container">
-            <div>
-            <a class="navbar-brand font-anton px-3 m-0" href="#about-page"><img src="images/jmAsset 1.png" alt="Logo"></a>
-            </div>
-            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link home-link pr-lg-4 border-mySecondary-right" href="#about-page">ABOUT <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link portfolio-link px-lg-4 border-mySecondary-right" href="#portfolio-page">PORTFOLIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link contact-link pl-lg-4" href="#contact-page">CONTACT</a>
-                </li>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Heading -->
-    <div class="container mt-3 pb-5">
-        <div class="row">
-            <div class="col-lg-6 pl-0 border-mySecondary-left pt-4 text-left">
-                 <h1 class="display-3 font-fjalla ml-3 text-myFifth">JORDAN McCOLLAM</h1>
-                 <div class="container typewriter ml-1">
-                    <p class="lead font-weight-bolder mb-3 text-myThird"><i class="fas fa-terminal"></i> Full Stack Developer</p>
+            <div class="row">
+                <!-- Text -->
+                <div class="col-lg-6 text-light mt-5 mt-lg-0">
+                    <h3 class="font-primary border-bottom border-light">About Jordan McCollam</h3>
+                    <p>
+                        Husband to the beautiful Leesha McCollam.
+                        <br>
+                        Proud owner of a cat that thinks he's a dog, Frank.
+                        <br>
+                        Previously an Audio Engineer.
+                        <br>
+                        <span class="text-center text-warning">
+                            Now a Full Stack Developer,
+                        </span>
+                        <br>
+                        with a <span class="text-danger">passion</span> for code and a <span
+                            class="text-success">drive</span> to make a difference.
+                    </p>
+                    <a href="https://github.com/jordanmccollam" target="_blank"
+                        class="btn btn-block btn-outline-danger rounded rounded-pill d-block d-lg-none">
+                        Github
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jordan-mccollam-8141a618a/" target="_blank"
+                        class="btn btn-block btn-outline-info rounded rounded-pill d-block d-lg-none">
+                        Linkedin
+                        <i class="fab fa-linkedin"></i>
+                    </a>
                 </div>
-                <hr class="border-myFourth-bottom mb-4">
+                <div class="col-lg-1"></div>
+
+                <!-- Education and resume -->
+                <div class="col-lg-5 text-light text-right mt-5 mt-lg-0">
+                    <h3 class="font-primary border-bottom border-light">Education</h3>
+                    <img src="./images/vandy.png" alt="vanderbilt" width="75" class="float-left">
+                    <p>
+                        Full Stack Coding Bootcamp
+                        <br>
+                        by Vanderbilt University
+                        <br>
+                        Nashville, TN | 2019-2020
+                    </p>
+
+                    <img src="./images/aspnet.png" alt="aspnet" width="75" class="float-left">
+                    <p>
+                        The Complete ASP.NET MVC 5 Course
+                        <br>
+                        by Mosh Hamedani
+                        <br>
+                        <a href="https://www.udemy.com/course/the-complete-aspnet-mvc-5-course/" target="_blank"
+                            class="text-light">udemy.com</a> | 2019-2020
+                    </p>
+
+                    <a href="./JordanMcCollam_Resume.docx" class="btn btn-block btn-outline-info rounded rounded-pill">Resume.docx <i
+                            class="far fa-file-word"></i></a>
+                    <a href="./JordanMcCollam_Resume.pdf" class="btn btn-block btn-outline-danger rounded rounded-pill">Resume.pdf <i
+                            class="far fa-file-pdf"></i></a>
+                </div>
             </div>
         </div>
-        <div class="row border-mySecondary-left pb-5">
-            <div class="col-2 col-lg-3 px-0">
-                <a class="contact-tab text-myPrimary bg-mySecondary email-link" href="#contact-page" role="button">
-                    <i class="fas fa-envelope fa-2x"></i>
-                </a>
-                <div class="my-4"></div>
-                <a class="contact-tab text-myPrimary bg-mySecondary phone-link" href="#contact-page" role="button">
-                        <i class="fas fa-phone fa-2x"></i>
-                </a>
-                <div class="my-4"></div>
-                <a class="contact-tab text-myPrimary bg-mySecondary" href="https://github.com/jordanmccollam" target="blank" role="button">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-                <div class="my-4"></div>
-                <a class="contact-tab text-myPrimary bg-mySecondary" href="https://www.linkedin.com/in/jordan-mccollam-8141a618a/" target="blank" role="button">
-                    <i class="fab fa-linkedin-in fa-2x"></i>
-                </a>
+
+        <!-- PROJECTS PAGE -->
+        <!-- Header -->
+        <div class="row mt-5 pt-5" id="projects">
+            <div class="col-lg-10 font-primary text-right text-secondary">
+                <h1 class="display-2">Projects</h1>
             </div>
-            <div class="col-10 col-lg-6 text-center mt-lg-4 fade-in">
-                <h3 class="font-fjalla text-myFourth">Hello world!</h3>
-                <p class="text-light">
-                    I'm a student at the Vanderbilt Coding Bootcamp in Nashville, TN.
-                    I'm confident that I have excelled in their material and I am excited 
-                    to get out there and see what I'll create. Take a look at my work and 
-                    feel free to reach out! 
-                </p>
-                <a href="JordanMcCollam_Resume.docx" target="blank"><button class="btn btn-outline-myFourth"><i class="fas fa-file-word"></i> Resume</button></a>
+            <div class="col-lg-2 text-secondary d-none d-lg-block">
+                <i class="fas fa-project-diagram fa-10x"></i>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="container">
+            <div class="row mb-5 pb-5 font-primary">
+
+                <!-- THE BUG TRACKER -->
+                <div class="col-lg-6 project-column mt-4">
+                    <div class="project-container">
+                        <a href="https://thebugtracker.herokuapp.com/" target="_blank">
+                            <div class="bar">
+                                <h6 class="pt-1">The Bug Tracker</h6>
+                                <i class="red-dot"></i>
+                                <i class="yellow-dot"></i>
+                                <i class="green-dot"></i>
+                            </div>
+                            <img src="./images/bugtracker.png" alt="project">
+                            <div class="flip-in-hor-bottom flip-out-hor-top project-hover">
+                                <img src="./images/bugtrackercover.png" alt="project-hover">
+                                <ul>
+                                    <li class="btn btn-sm btn-primary mt-2">HTML & CSS</li>
+                                    <li class="btn btn-sm btn-primary mt-2">JavaScript</li>
+                                    <br>
+                                    <li class="btn btn-sm btn-primary mt-2">MongoDB</li>
+                                    <li class="btn btn-sm btn-primary mt-2">Node & Express</li>
+                                    <br>
+                                    <li class="btn btn-sm btn-primary mt-2">Socket.io</li>
+                                    <li class="btn btn-sm btn-primary mt-2">Click to View</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- READY UP -->
+                <div class="col-lg-6 project-column mt-4">
+                    <div class="project-container">
+                        <a href="https://gamersreadyup.herokuapp.com/" target="_blank">
+                            <div class="bar">
+                                <h6 class="pt-1">Ready Up</h6>
+                                <i class="red-dot"></i>
+                                <i class="yellow-dot"></i>
+                                <i class="green-dot"></i>
+                            </div>
+                            <img src="./images/readyUp.png" alt="project">
+                            <div class="flip-in-hor-bottom flip-out-hor-top project-hover">
+                                <img src="./images/readyUpcover.png" alt="project-hover">
+                                <ul>
+                                    <li class="btn btn-sm btn-primary mt-2">HTML & CSS</li>
+                                    <li class="btn btn-sm btn-primary mt-2">JavaScript</li>
+                                    <br>
+                                    <li class="btn btn-sm btn-primary mt-2">MySQL</li>
+                                    <li class="btn btn-sm btn-primary mt-2">Node & Express</li>
+                                    <br>
+                                    <li class="btn btn-sm btn-primary mt-2">Socket.io</li>
+                                    <li class="btn btn-sm btn-primary mt-2">Click to View</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MONGO SCRAPER -->
+                <div class="col-lg-6 project-column mt-4">
+                    <div class="project-container">
+                        <a href="http://news-jm.herokuapp.com/" target="_blank">
+                            <div class="bar">
+                                <h6 class="pt-1">Mongo Scraper</h6>
+                                <i class="red-dot"></i>
+                                <i class="yellow-dot"></i>
+                                <i class="green-dot"></i>
+                            </div>
+                            <img src="./images/news.png" alt="project">
+                            <div class="flip-in-hor-bottom flip-out-hor-top project-hover">
+                                <img src="./images/newscover.png" alt="project-hover">
+                                <ul>
+                                    <li class="btn btn-sm btn-primary mt-2">HTML & CSS</li>
+                                    <li class="btn btn-sm btn-primary mt-2">JavaScript</li>
+                                    <br>
+                                    <li class="btn btn-sm btn-primary mt-2">MongoDB</li>
+                                    <li class="btn btn-sm btn-primary mt-2">Node & Express</li>
+                                    <br>
+                                    <li class="btn btn-sm btn-primary mt-2">Cheerio</li>
+                                    <li class="btn btn-sm btn-primary mt-2">Click to View</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Laser Defender -->
+                <div class="col-lg-6 project-column mt-4">
+                    <div class="project-container">
+                        <a href="https://jordanmccollam.github.io/laserdefender/" target="_blank">
+                            <div class="bar">
+                                <h6 class="pt-1">Laser Defender</h6>
+                                <i class="red-dot"></i>
+                                <i class="yellow-dot"></i>
+                                <i class="green-dot"></i>
+                            </div>
+                            <img src="./images/laserdefender.png" alt="project">
+                            <div class="flip-in-hor-bottom flip-out-hor-top project-hover">
+                                <img src="./images/laserdefendercover.png" alt="project-hover">
+                                <ul>
+                                    <li class="btn btn-sm btn-primary mt-2">C#</li>
+                                    <li class="btn btn-sm btn-primary mt-2">Unity</li>
+                                    <li class="btn btn-sm btn-primary mt-2">Click to View</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Click Game -->
+                <div class="col-lg-6 project-column mt-4">
+                    <div class="project-container">
+                        <a href="https://clickfamilyguy.herokuapp.com/" target="_blank">
+                            <div class="bar">
+                                <h6 class="pt-1">(React) Click Game</h6>
+                                <i class="red-dot"></i>
+                                <i class="yellow-dot"></i>
+                                <i class="green-dot"></i>
+                            </div>
+                            <img src="./images/clickgame.png" alt="project">
+                            <div class="flip-in-hor-bottom flip-out-hor-top project-hover">
+                                <img src="./images/clickgamecover.png" alt="project-hover">
+                                <ul>
+                                    <li class="btn btn-sm btn-primary mt-2">HTML & CSS</li>
+                                    <li class="btn btn-sm btn-primary mt-2">JavaScript</li>
+                                    <br>
+                                    <li class="btn btn-sm btn-primary mt-2">React</li>
+                                    <li class="btn btn-sm btn-primary mt-2">Click to View</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Stitch Smith -->
+                <div class="col-lg-6 project-column mt-4">
+                    <div class="project-container">
+                        <a href="https://jordanmccollam.github.io/stitchsmith/" target="_blank">
+                            <div class="bar">
+                                <h6 class="pt-1">Stitch Smith</h6>
+                                <i class="red-dot"></i>
+                                <i class="yellow-dot"></i>
+                                <i class="green-dot"></i>
+                            </div>
+                            <img src="./images/stitchsmith.png" alt="project">
+                            <div class="flip-in-hor-bottom flip-out-hor-top project-hover">
+                                <img src="./images/stitchsmithcover.png" alt="project-hover">
+                                <ul>
+                                    <li class="btn btn-sm btn-primary mt-2">HTML & CSS</li>
+                                    <li class="btn btn-sm btn-primary mt-2">JavaScript</li>
+                                    <br>
+                                    <li class="btn btn-sm btn-primary mt-2">Weather API</li>
+                                    <li class="btn btn-sm btn-primary mt-2">Color API</li>
+                                    <br>
+                                    <li class="btn btn-sm btn-primary mt-2">Click to View</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 
-    
-    <!-- ANCHOR Portfolio -->
-    <div id="portfolio-page"></div>
-        <div class="container-fluid bg-gradient py-5">
-            <div class="container">
-                <!-- <div class="overlay-secondary px-4"> -->
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h1 class="display-4 font-fjalla text-myFifth pb-1 pt-5 border-myFourth-bottom">PORTFOLIO</h1>
-                    </div>
-                </div>
-                <div class="row mt-3 pb-5">
-                    <div class="col-md-6 col-lg-4 my-4 py-2 text-center">
-                        <a href="https://thebugtracker.herokuapp.com" target="blank">
-                            <div class="bugtracker project">
-                            <video loop preload="auto" muted="muted">
-                                <source src="videos/BugTracker.mp4" type="video/mp4">
-                            </video>
-                            <h3 class="font-yanone project-label bg-myPrimary py-1 text-myFifth">Bug Tracker</h3>
-                        </div></a>
-                    </div>
-                    <div class="col-md-6 col-lg-4 my-4 py-2 text-center">
-                        <a href="https://gamersreadyup.herokuapp.com" target="blank">
-                            <div class="ready-up project">
-                            <video loop preload="auto" muted="muted">
-                                <source src="videos/readyUp.mp4" type="video/mp4">
-                            </video>
-                            <h3 class="font-yanone project-label bg-myPrimary py-1 text-myThird">Ready Up</h3>
-                        </div></a>
-                    </div>
-                    <div class="col-md-6 col-lg-4 my-4 py-2 text-center">
-                        <a href="http://news-jm.herokuapp.com/" target="blank">
-                        <div class="news project">
-                            <video loop preload="auto" muted="muted">
-                                <source src="videos/news.mp4" type="video/mp4">
-                            </video>
-                            <h3 class="font-yanone project-label bg-myPrimary py-1 text-myFourth">Mongo Scraper</h3>
-                        </div></a>
-                    </div>
-                    <div class="col-md-6 col-lg-4 my-4 py-2 text-center">
-                        <a href="https://jordanmccollam.github.io/stitchsmith/" target="blank">
-                        <div class="stitch-smith project">
-                            <video loop preload="auto" muted="muted">
-                                <source src="videos/stitch-smith.mp4" type="video/mp4">
-                            </video>
-                            <h3 class="font-yanone project-label bg-myPrimary py-1 text-myFourth">Stitch Smith</h3>
-                        </div></a>
-                    </div>
-                    <div class="col-md-6 col-lg-4 my-4 py-2 text-center">
-                        <a href="https://jordanmccollam.github.io/clickygame/" target="blank">
-                        <div class="clickygame project">
-                            <video loop preload="auto" muted="muted">
-                                <source src="videos/clickygame.mp4" type="video/mp4">
-                            </video>
-                            <h3 class="font-yanone project-label bg-myPrimary py-1 text-myFifth">React Memory Game</h3>
-                        </div></a>
-                    </div>
-                    <!-- THIS IS A COMMENT -->
-                    <div class="col-md-6 col-lg-4 my-4 py-2 text-center">
-                        <a href="https://jordanmccollam.github.io/giphy/" target="blank">
-                        <div class="giphy project">
-                            <video loop preload="auto" muted="muted">
-                                <source src="videos/giphy.mp4" type="video/mp4">
-                            </video>
-                            <h3 class="font-yanone project-label bg-myPrimary py-1 text-myThird">Fail Gif Generator</h3>
-                        </div></a>
-                    </div>
-                    <div class="col-md-6 col-lg-4 my-4 py-2 text-center">
-                        <a href="https://jordanmccollam.github.io/triviagame/" target="blank">
-                        <div class="trivia project">
-                            <video loop preload="auto" muted="muted">
-                                <source src="videos/trivia.mp4" type="video/mp4">
-                            </video>
-                            <h3 class="font-yanone project-label bg-myPrimary py-1 text-myFifth">Soccer Mom Trivia</h3>
-                        </div></a>
-                    </div>
-                    <div class="col-md-6 col-lg-4 my-4 py-2 text-center">
-                        <a href="https://jordanmccollam.github.io/batbreak/" target="blank">
-                        <div class="batbreak project">
-                            <video loop preload="auto" muted="muted">
-                                <source src="videos/batbreak.mp4" type="video/mp4">
-                            </video>
-                            <h3 class="font-yanone project-label bg-myPrimary py-1 text-myThird">Bat Break</h3>
-                        </div></a>
-                    </div>
-                    <div class="col-md-6 col-lg-4 my-4 py-2 text-center">
-                        <a href="https://jordanmccollam.github.io/laserdefender/" target="blank">
-                        <div class="laserdefender project">
-                            <video loop preload="auto" muted="muted">
-                                <source src="videos/laserdefender.mp4" type="video/mp4">
-                            </video>
-                            <h3 class="font-yanone project-label bg-myPrimary py-1 text-myFourth">Laser Defender</h3>
-                        </div></a>
-                    </div>
-                </div>
+    <!-- CONTACTS PAGE -->
+    <div class="container-fluid mb-5 pb-5" id="contact">
+        <!-- Header -->
+        <div class="row mt-5 pt-5" id="projects">
+            <div class="col-lg-10 font-primary text-right text-secondary">
+                <h1 class="display-2">Contact</h1>
+            </div>
+            <div class="col-lg-2 text-secondary d-none d-lg-block">
+                <i class="fas fa-envelope fa-10x"></i>
             </div>
         </div>
 
-    <div id="contact-page">
-        <div class="container-fluid bg-mySecondary pt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h1 class="display-4 font-fjalla text-myPrimary pb-1 pt-5">CONTACT</h1>
+        <!-- Contact form -->
+        <div class="row justify-content-center text-light">
+            <div class="col-md-7 col-lg-5">
+                <h4 class="text-center">Let's Talk!</h4>
+                <form action="https://formspree.io/jordy.mccollam@gmail.com" method="POST">
+                    <div class="form-group mb-1">
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Email">
                     </div>
-                </div>
-                <!-- <div class="container-fluid bg-myPrimary mb-5 pb-5"> -->
-                    <div class="row">
-                        <div class="col-3 col-lg-1 pt-1 text-center top-tabs hover-tab active-tab email-tab">
-                            <i class="fas fa-envelope fa-2x"></i>
-                        </div>
-                        <div class="col-3 col-lg-1 pt-1 text-center top-tabs hover-tab phone-tab">
-                                <i class="fas fa-phone fa-2x"></i>
-                        </div>
-                        <div class="col-3 col-lg-1 pt-1 text-center top-tabs hover-tab github-tab">
-                            <i class="fab fa-github fa-2x"></i>
-                        </div>
-                        <div class="col-3 col-lg-1 pt-1 text-center top-tabs hover-tab linkedin-tab">
-                           <i class="fab fa-linkedin-in fa-2x"></i></a>
-                        </div>
+                    <div class="form-group mb-1">
+                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid bg-myPrimary pt-3">
-            <div class="container py-4">
-                <div class="row">
-                    <div class="col-lg-8 email-page">
-                        <form action="https://formspree.io/jordy.mccollam@gmail.com" method="POST">
-                            <div class="form-row">
-                                <div class="form-group col-6">
-                                    <label for="email" class="font-fjalla text-myFifth">Email:</label>
-                                    <input type="email" id="email" name="email" class="form-control">
-                                </div>
-                                <div class="form-group col-6">
-                                    <label for="subject" class="font-fjalla text-myThird">Subject:</label>
-                                    <input type="text" id="subject" name="subject" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="message" class="font-fjalla text-myFourth">Message:</label>
-                                <textarea id="message" class="form-control" name="message" rows="5"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-success font-fjalla" id="contact-submit"><i class="fas fa-paper-plane"></i> Send</button>
-                        </form>
+                    <div class="form-group">
+                        <textarea id="message" class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn-dark mt-1" id="contact-submit"><i
+                                class="fas fa-paper-plane"></i> Send</button>
                     </div>
-
-                    <div class="col-lg-8 phone-page text-center mt-5">
-                        <h3 class="display-4 text-myThird font-yanone">Phone Number</h3>
-                        <h3 class="text-myFifth font-fjalla">707-301-3687</h3>
-                    </div>
-
-                    <div class="d-none d-lg-block col-lg-4 profile text-center">
-                        <img src="images/me.jpg" alt="Profile-Image" class="rounded">
-                    </div>
-                </div>
-                <div class="row back-to-top">
-                    <div class="col-12 text-center">
-                        <a href="#about-page"><i class="fas fa-chevron-up fa-3x"></i>
-                        <p>back to top</p></a>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
 
-    <div class="modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title text-danger">Error</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p class="error-message"></p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-<!-- BOOTSTRAP JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<!-- CUSTOM Javascript -->
-<script src="javascript/script.js"></script>
 </body>
+
 </html>

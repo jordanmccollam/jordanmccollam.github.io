@@ -1,227 +1,158 @@
-body {
-    width: 100%;
-    height: 100%;
-    font-size: 18px;
-}
-
 html {
     scroll-behavior: smooth;
-  }
-
-/* ANCHOR CONTACT TABS */
-.contact-tab {
-    padding: 20px 10px 9px 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    transition: all 0.5s;
 }
-.contact-tab:hover {
-    padding: 20px 10px 9px 30px;
+
+body {
+    overflow-x: hidden;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+a:hover {
     text-decoration: none;
-    color: #161b40;
 }
 
+.side-menu {
+    position: relative;
+    position: fixed;
+    z-index: 5;
+}
 
-/* TYPING ANIMATION */
-.typewriter p {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .30em; /* Adjust as needed */
-    animation: 
-      typing 2.5s steps(30, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #efa500; }
-  }
+#mySidenav a {
+    position: absolute;
+    left: -30px;
+    transition: 0.3s;
+    padding: 13px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 0 5px 5px 0;
+    text-align: end;
+    color: #2b3e50;
+}
 
-@media only screen and (max-width: 992px) {
-    .typewriter p {
-        font-size: 17px;
+.logo {
+    position: absolute;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#about-tab {
+    top: 100px;
+}
+#projects-tab {
+    top: 180px;
+}
+#contact-tab {
+    top: 260px;
+}
+#github-tab {
+    top: 340px;
+}
+#linkedin-tab {
+    top: 420px;
+}
+
+.font-primary {
+    font-family: 'Anton', sans-serif;
+}
+
+.header-icon {
+    font-size: 20vw;
+}
+
+@media only screen and (max-width: 1200px) {
+    .project-column {
+        display: flex;
+        justify-content: center;
     }
-    .nav-link {
-        border: #161b40;
+}
+
+@media only screen and (min-width: 1200px) {
+    .project-column:nth-child(odd) {
+        display: flex;
+        justify-content: flex-end;
     }
 }
 
-.fade-in {
-    /* animation: fadein 8s; */
-    display: none;
+.project-container {
+    box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.274);
+    height: 234px;
+    width: 362px;
 }
 
-@keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
+.bar {
+    color: #6a6a6a;
+    background-color: #ddd;
+    height: 24px;
+    text-align: center;
+    position: relative;
 }
 
-
-/* ANCHOR NAV */
-nav {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+i.red-dot {
+    height: 12px;
+    width: 12px;
+    background-color: #ff5f57;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 10px;
 }
-nav a {
-    color: #efa500;
+i.yellow-dot {
+    height: 12px;
+    width: 12px;
+    background-color: #ffbd2e;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 26px;
 }
-nav a:hover {
-    color: #cf8f03;
-}
-nav .home-link:hover {
-    border-bottom: #f40058 solid 1px;
-}
-nav .portfolio-link:hover {
-    border-bottom: #41b853 solid 1px;
-}
-nav .contact-link:hover {
-    border-bottom: #43bee5 solid 1px;
-}
-/* .navbar-brand {
-    font-size: 30px;
-    color: #161b40;
-}
-.navbar-brand:hover {
-    font-size: 30px;
-    color: #161b40;
-} */
-
-.navbar-brand img {
-    width: 45px;
+i.green-dot {
+    height: 12px;
+    width: 12px;
+    background-color: #28ca41;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 42px;
 }
 
-/* ANCHOR PORTFOLIO */
+.project-container img {
+    width: 362px;
+    height: 210px;
+    position: relative;
+    z-index: 1;
+}
 
-/* video */
-video {
-    /* width: 500px; */
-    height: 100%;
-    width: 100%;
-    border-bottom-left-radius: 8%;
-    border-bottom-right-radius: 8%;
+.project-hover {
+    position: absolute;
+    bottom: 0px;
     opacity: 0;
-    transition: 1s all;
+    background-color: #1a2631;
+    transition: 0.3s;
+    z-index: 3;
 }
-video:hover {
+
+.project-hover img {
+    opacity: 0.2;
+}
+
+.project-hover:hover {
     opacity: 1;
 }
 
-.bg-gradient {
-    background: linear-gradient(#161b40, #efa500);
-}
-.project {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    border-bottom-left-radius: 8%;
-    border-bottom-right-radius: 8%;
-}
-.project-label {
+.project-hover ul {
     position: absolute;
-    top: -40px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    width: 100%;
+    left: 15%;
+    top: 15%;
+    z-index: 5;
 }
 
-
-/* ANCHOR CONTACT */
-.top-tabs {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border: #161b40 solid 1px;
-    color: #161b40;
-}
-.hover-tab-2:hover {
-    color: #f40058;
-}
-.hover-tab-1:hover {
-    color: #41b853;
-}
-.hover-tab-3:hover {
-    color: #43bee5;
-}
-
-.active-tab {
-    background: #161b40;
-    color: #efa500;
-}
-.hover-tab:hover {
-    background: #161b40;
-    color: #efa500;
-    cursor: pointer;
-}
-
-label {
-    font-size: 25px;
-}
-
-.profile img {
-    width: 250px;
-}
-
-.back-to-top a {
-    color: rgb(139, 139, 139);
-    text-decoration: none;
-}
-.back-to-top a:hover {
-    color: rgb(112, 112, 112);
-}
-
-
-/* ANCHOR PORTFOLIO THUMBS */
-.avengers-rpg {
-    background: url(../images/avengers-rpg-2.png) center;
-    background-size: cover;
-}
-.train-schedule {
-    background: url(../images/train-schedule.jpg) center;
-    background-size: cover;
-}
-.stitch-smith {
-    background: url(../images/stitchsmith.jpg) center;
-    background-size: cover;
-}
-.clickygame {
-    background: url(../images/clickygame.jpg) center;
-    background-size: cover;
-}
-.giphy {
-    background: url(../images/failbanner.jpg);
-    background-size: 50px;
-}
-.trivia {
-    background: url(../images/trivia.jpg) center;
-    background-size: cover;
-}
-.batbreak {
-    background: url(../images/batbreak.png) center;
-    background-size: cover;
-}
-.laserdefender {
-    background: url(../images/laserdefender.png) center;
-    background-size: cover;
-}
-.friendfinder {
-    background: url(../images/friendfinder.png) center;
-    background-size: cover;
-}
-.ready-up {
-    background: url(../images/readyUp.png) center;
-    background-size: cover;
-}
-.news {
-    background: url(../images/news.png) #ebe3c5 center;
-    background-size: cover;
-}
-.bugtracker {
-    background: url(../images/bugtracker.png) #ebe3c5 center;
+input, textarea {
+    background-color: #1a2631 !important;  
+    color: inherit !important;  
 }
