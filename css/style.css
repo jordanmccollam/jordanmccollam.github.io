@@ -156,3 +156,25 @@ input, textarea {
     background-color: #1a2631 !important;  
     color: inherit !important;  
 }
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4e5d6c;
+    border-radius: 50px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #424f5c;
+}
