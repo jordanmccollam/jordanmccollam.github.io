@@ -178,3 +178,7 @@ input, textarea {
 ::-webkit-scrollbar-thumb:hover {
     background: #424f5c;
 }
+
+.project-hover li {
+    list-style: none;
+}
