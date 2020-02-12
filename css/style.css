@@ -44,15 +44,19 @@ a:hover {
 #about-tab {
     top: 100px;
 }
+
 #projects-tab {
     top: 180px;
 }
+
 #contact-tab {
     top: 260px;
 }
+
 #github-tab {
     top: 340px;
 }
+
 #linkedin-tab {
     top: 420px;
 }
@@ -102,6 +106,7 @@ i.red-dot {
     top: 6px;
     left: 10px;
 }
+
 i.yellow-dot {
     height: 12px;
     width: 12px;
@@ -111,6 +116,7 @@ i.yellow-dot {
     top: 6px;
     left: 26px;
 }
+
 i.green-dot {
     height: 12px;
     width: 12px;
@@ -152,9 +158,10 @@ i.green-dot {
     z-index: 5;
 }
 
-input, textarea {
-    background-color: #1a2631 !important;  
-    color: inherit !important;  
+input,
+textarea {
+    background-color: #1a2631 !important;
+    color: inherit !important;
 }
 
 /* Scrollbar */
@@ -162,18 +169,18 @@ input, textarea {
 ::-webkit-scrollbar {
     width: 8px;
 }
-  
+
 /* Track */
 ::-webkit-scrollbar-track {
     background: none;
 }
-  
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #4e5d6c;
     border-radius: 50px;
 }
-  
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #424f5c;
@@ -181,4 +188,9 @@ input, textarea {
 
 .project-hover li {
     list-style: none;
+}
+
+.challenge {
+    width: inherit;
+    height: 650px;
 }
