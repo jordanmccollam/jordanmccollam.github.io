@@ -9,11 +9,14 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <Container >
+      <Container fluid >
         <Row className="full">
           <Col>
+            <Comp.Menu />
 
-            <Screens.Main />
+            <Container >
+              <Screens.Main />
+            </Container>
 
           </Col>
         </Row>

@@ -1,0 +1,12 @@
+@import "../../sass/variables";
+
+.menu {
+    position: absolute;
+    left: 0;
+    top: $space-10;
+    padding-left: $space-02;
+
+    .logo {
+        width: 4em;
+    }
+}
