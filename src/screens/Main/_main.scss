@@ -1,0 +1,21 @@
+@import "../../sass/variables";
+
+.main {
+    position: relative;
+    height: 100vh;
+    padding: $space-05;
+    overflow: hidden;
+
+    .profile-image {
+        width: 40vw;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .content {
+        padding-left: 1vw;
+        margin-top: 10vh;
+        font-size: $text-02;
+    }
+}
