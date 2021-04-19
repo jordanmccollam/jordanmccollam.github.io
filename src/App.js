@@ -9,7 +9,7 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <Container fluid>
+      <Container >
         <Row className="full">
           <Col>
 
