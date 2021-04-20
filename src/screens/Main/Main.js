@@ -17,8 +17,8 @@ const Main = (props) => {
 
   return (
     <div className={`${props.className} ${classnames(classes)}`}>
-      <h1 className="tracking-in-expand text-lighter">JORDAN MCCOLLAM</h1>
-      <h2 className="tracking-in-expand">SOFTWARE DEVELOPER</h2>
+      <h1 className="tracking-in-expand">JORDAN MCCOLLAM</h1>
+      <h2 className="tracking-in-expand text-lighter">SOFTWARE DEVELOPER</h2>
 
       <div className="content swing-top-fwd">
         Hello world! Here's a little bit about me...
