@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import classnames from "classnames"
 import { Row, Col } from 'react-bootstrap';
 import logo from '../../logo-mono.png';
-import { FaUserCircle, FaGithub } from 'react-icons/fa';
+import { FaUserCircle, FaGithub, FaProjectDiagram } from 'react-icons/fa';
 
 import './_menu.scss';
 
@@ -15,6 +15,10 @@ const links = [
   {
     name: 'ABOUT',
     icon: <FaUserCircle size={iconSize} />
+  },
+  {
+    name: 'PROJECTS',
+    icon: <FaProjectDiagram size={iconSize} />
   },
   {
     name: 'GITHUB',
@@ -33,7 +37,8 @@ const Menu = (props) => {
         window.open("https://github.com/jordanmccollam");
         break;
       default: 
-        console.log(logger + 'No action assigned');
+        var elmnt = document.getElementById(name.toLowerCase());
+        elmnt.scrollIntoView();
         return;
     }
   }

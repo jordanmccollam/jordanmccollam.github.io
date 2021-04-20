@@ -20,7 +20,7 @@ const Main = (props) => {
 	};
 
   return (
-    <Container className={`${props.className} ${classnames(classes)}`}>
+    <Container className={`${props.className} ${classnames(classes)}`} id="about">
       <h1 className="tracking-in-expand">JORDAN MCCOLLAM</h1>
       <h2 className="tracking-in-expand text-lighter">SOFTWARE DEVELOPER</h2>
 

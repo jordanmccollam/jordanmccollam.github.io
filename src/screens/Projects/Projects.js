@@ -32,7 +32,7 @@ const Projects = (props) => {
 	};
 
   return (
-    <div className={`${props.className} ${classnames(classes)}`}>
+    <div className={`${props.className} ${classnames(classes)}`} id="projects">
       <Container className="h-100">
         <h1 className="tracking-in-expand text-alt">PROJECTS</h1>
 

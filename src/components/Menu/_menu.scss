@@ -1,10 +1,11 @@
 @import "../../sass/variables";
 
 .menu {
-    position: absolute;
-    left: 0;
+    position: fixed;
+    left: -10px;
     top: $space-05;
     padding-left: 10px;
+    z-index: 5;
 
     .logo {
         width: 5em;
@@ -54,8 +55,8 @@
     top: $space-15;
 }
 .menu-link:nth-child(3) {
-    top: $space-15 + $space-15 + $space-01;
+    top: ($space-15 * 2) + $space-01;
 }
 .menu-link:nth-child(4) {
-    top: $space-15 +  $space-15 + $space-15 + $space-01;
+    top: ($space-15 * 3) + ($space-01 * 2);
 }
