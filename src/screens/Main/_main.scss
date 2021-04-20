@@ -17,5 +17,18 @@
         padding-left: 1vw;
         margin-top: 10vh;
         font-size: $text-02;
+
+        &-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: $space-02;
+            height: 5em;
+            width: 5em;
+        }
+
+        &-image {
+            width: 4em;
+        }
     }
 }

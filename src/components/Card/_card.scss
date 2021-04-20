@@ -1,0 +1,16 @@
+@import "../../sass/variables";
+
+// #5c5a74
+
+.card {
+    padding: $space-02;
+    width: max-content;
+    border-radius: $radius !important;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: $transition;
+    }
+}
