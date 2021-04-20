@@ -1,6 +1,14 @@
 @import "../../sass/variables";
 
 .project {
+    margin-bottom: $space-05;
+    transition: $transition;
+    cursor: pointer;
+
+    // &:hover {
+    //     transform: scale(1.05);
+    //     transition: $transition;
+    // }
 
     &-bar {
         display: flex;
@@ -37,9 +45,17 @@
     }
 
     &-content {
+        width: 100%;
         background-color: white;
-        height: 12em;
         border-bottom-left-radius: $radius;
         border-bottom-right-radius: $radius;
+
+        &-img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            border-bottom-left-radius: $radius;
+            border-bottom-right-radius: $radius;
+        }
     }
 }

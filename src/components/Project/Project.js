@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from 'prop-types'
 import classnames from "classnames"
 import { Row, Col } from 'react-bootstrap';
+import instaplan from '../../assets/instaplan.png';
 
 import './_project.scss';
 
@@ -18,11 +19,11 @@ const Project = (props) => {
         <div className="red-dot"></div>
         <div className="yellow-dot"></div>
         <div className="green-dot"></div>
-        {props.name}
+        {props.project.name}
       </div>
 
       <div className="project-content">
-
+        <img src={props.project.img} alt={props.project.name} className="project-content-img" />
       </div>
     </div>
   )
@@ -30,12 +31,12 @@ const Project = (props) => {
 
 Project.propTypes = {
   className: PropTypes.string,
-  name: PropTypes.string
+  project: PropTypes.object,
 }
 
 Project.defaultProps = {
   className: "",
-  name: 'PROJECT'
+  project: {name: 'PROJECT', img: instaplan},
 }
 
 export default Project;

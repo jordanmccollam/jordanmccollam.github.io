@@ -9,6 +9,9 @@ import vandy from '../../assets/vandy.png';
 import aspnet from '../../assets/aspnet.png';
 import python from '../../assets/python.png';
 import { FaFilePdf, FaFileWord } from 'react-icons/fa';
+import instaplan from '../../assets/instaplan.png';
+import smartdiary from '../../assets/smartdiary.png';
+import billsnsheet from '../../assets/billsnsheet.png';
 
 import './_projects.scss';
 
@@ -17,12 +20,19 @@ const logger = "Projects:: ";
 const projects = [
   {
     name: 'INSTAPLAN',
+    img: instaplan
   },
   {
     name: 'SMART DIARY',
+    img: smartdiary
   },
   {
     name: "BILLS N' SHEET",
+    img: billsnsheet
+  },
+  {
+    name: "(REACT) CLICK GAME",
+    img: billsnsheet
   },
 ]
 
@@ -36,12 +46,16 @@ const Projects = (props) => {
       <Container className="h-100">
         <h1 className="tracking-in-expand text-alt">PROJECTS</h1>
 
-        <Row className="content swing-top-fwd">
-          {projects.map((project, i) => (
-            <Col lg={4} key={`project-${i}`} >
-              <Project name={project.name} />
-            </Col>
-          ))}
+        <Row className="content swing-top-fwd justify-content-center">
+          <Col lg={10}>
+            <Row>
+              {projects.map((project, i) => (
+                <Col lg={6} key={`project-${i}`}>
+                  <Project project={project} />
+                </Col>
+              ))}
+            </Row>
+          </Col>
         </Row>
       
       </Container>
