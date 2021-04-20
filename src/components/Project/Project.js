@@ -14,7 +14,16 @@ const Project = (props) => {
 
   return (
     <div className={`${props.className} ${classnames(classes)}`}>
-      <div className="project-name">{props.name}</div>
+      <div className="project-bar">
+        <div className="red-dot"></div>
+        <div className="yellow-dot"></div>
+        <div className="green-dot"></div>
+        {props.name}
+      </div>
+
+      <div className="project-content">
+
+      </div>
     </div>
   )
 }

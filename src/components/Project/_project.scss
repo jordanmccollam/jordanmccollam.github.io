@@ -2,7 +2,7 @@
 
 .project {
 
-    &-name {
+    &-bar {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -13,22 +13,33 @@
         border-top-right-radius: $radius;
         position: relative;
 
-        &::after,
-        &::before {
-            content: '';
+        .red-dot,
+        .yellow-dot,
+        .green-dot {
             height: 1em;
             width: 1em;
             border-radius: 100%;
             position: absolute;
         }
 
-        &::after {
+        .yellow-dot {
             background-color: #ffbd2d;
             left: 2.5em;
         }
-        &::before {
+        .red-dot {
             background-color: #ff5f57;
             left: 1em;
         }
+        .green-dot {
+            background-color: #27ca40;
+            left: 4em;
+        }
+    }
+
+    &-content {
+        background-color: white;
+        height: 12em;
+        border-bottom-left-radius: $radius;
+        border-bottom-right-radius: $radius;
     }
 }

@@ -17,7 +17,13 @@ const logger = "Projects:: ";
 const projects = [
   {
     name: 'INSTAPLAN',
-  }
+  },
+  {
+    name: 'SMART DIARY',
+  },
+  {
+    name: "BILLS N' SHEET",
+  },
 ]
 
 const Projects = (props) => {
@@ -27,7 +33,7 @@ const Projects = (props) => {
 
   return (
     <div className={`${props.className} ${classnames(classes)}`}>
-      <Container>
+      <Container className="h-100">
         <h1 className="tracking-in-expand text-alt">PROJECTS</h1>
 
         <Row className="content swing-top-fwd">

@@ -7,4 +7,9 @@
     overflow: hidden;
     background-color: $primary-10;
     color: $bg !important;
+
+    .content {
+        height: 100%;
+        padding-top: $space-15;
+    }
 }
