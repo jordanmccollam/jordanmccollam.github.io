@@ -1,8 +1,8 @@
-$transition: 0.7s;
+$animation-transition: 0.7s;
 
 .tracking-in-expand {
-	-webkit-animation: tracking-in-expand $transition cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand $transition cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	-webkit-animation: tracking-in-expand $animation-transition cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand $animation-transition cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
  @-webkit-keyframes tracking-in-expand {
   0% {
@@ -30,8 +30,8 @@ $transition: 0.7s;
 }
 
 .flip-in-diag-2-br {
-	-webkit-animation: flip-in-diag-2-br $transition cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: flip-in-diag-2-br $transition cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: flip-in-diag-2-br $animation-transition cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: flip-in-diag-2-br $animation-transition cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
  @-webkit-keyframes flip-in-diag-2-br {
   0% {
@@ -61,8 +61,8 @@ $transition: 0.7s;
 
 
 .swing-top-fwd {
-	-webkit-animation: swing-top-fwd $transition cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: swing-top-fwd $transition cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: swing-top-fwd $animation-transition cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: swing-top-fwd $animation-transition cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
  @-webkit-keyframes swing-top-fwd {
   0% {

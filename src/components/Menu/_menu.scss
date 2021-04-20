@@ -4,9 +4,57 @@
     position: absolute;
     left: 0;
     top: $space-05;
-    padding-left: $space-02;
 
     .logo {
-        width: 4em;
+        width: 5em;
+        border-bottom: 1px solid $primary;
+        padding: 0 $space-01 $space-03 $space-02;
     }
+
+    &-link {
+        background-color: $primary;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 $space-03;
+        height: 4em;
+        width: 8em;
+        border-top-right-radius: $radius;
+        border-bottom-right-radius: $radius;
+        margin-top: $space-02;
+        cursor: pointer;
+        transition: $transition;
+        position: absolute;
+        left: -$space-11;
+        
+        path,
+        &-name {
+            color: $primary-00;
+        }
+        &-name {
+            margin-right: $space-01;
+            opacity: 0;
+            font-size: $text-00;
+        }
+
+        &:hover {
+            transition: $transition;
+            background-color: darken($primary, 5%);
+            left: 0;
+            .menu-link-name {
+                transition: $transition;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.menu-link:nth-child(2) {
+    top: $space-15;
+}
+.menu-link:nth-child(3) {
+    top: $space-15 + $space-15 + $space-01;
+}
+.menu-link:nth-child(4) {
+    top: $space-15 +  $space-15 + $space-15 + $space-01;
 }
