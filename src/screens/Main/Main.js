@@ -20,7 +20,7 @@ const Main = (props) => {
 	};
 
   return (
-    <div className={`${props.className} ${classnames(classes)}`}>
+    <Container className={`${props.className} ${classnames(classes)}`}>
       <h1 className="tracking-in-expand">JORDAN MCCOLLAM</h1>
       <h2 className="tracking-in-expand text-lighter">SOFTWARE DEVELOPER</h2>
 
@@ -58,7 +58,7 @@ const Main = (props) => {
       </Row>
 
       <img src={profile} alt="profile image" className="profile-image flip-in-diag-2-br" />
-    </div>
+    </Container>
   )
 }
 

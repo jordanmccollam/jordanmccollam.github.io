@@ -1,0 +1,10 @@
+@import "../../sass/variables";
+
+.projects {
+    position: relative;
+    height: 100vh;
+    padding: $space-05;
+    overflow: hidden;
+    background-color: $primary-10;
+    color: $bg !important;
+}
