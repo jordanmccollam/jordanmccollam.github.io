@@ -14,8 +14,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #dddddd;
-        color: #6a6a6a;
+        // background-color: #dddddd;
+        background-color: $primary-00;
+        // color: #6a6a6a;
+        color: $primary;
         font-weight: bold;
         border-top-left-radius: $radius;
         border-top-right-radius: $radius;
@@ -24,15 +26,15 @@
         .red-dot,
         .yellow-dot,
         .green-dot {
-            height: 1em;
-            width: 1em;
+            height: 0.8em;
+            width: 0.8em;
             border-radius: 100%;
             position: absolute;
         }
 
         .yellow-dot {
             background-color: #ffbd2d;
-            left: 2.5em;
+            left: 2em;
         }
         .red-dot {
             background-color: #ff5f57;
@@ -40,7 +42,7 @@
         }
         .green-dot {
             background-color: #27ca40;
-            left: 4em;
+            left: 3em;
         }
     }
 
