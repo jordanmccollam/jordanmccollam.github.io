@@ -28,7 +28,7 @@ const Contact = (props) => {
               <Form.Control className="mt-2" as="textarea" rows={5} placeholder="Message" name="message" />
               <div className="d-flex justify-content-between mt-2">
                 <Button type="submit">Send <FaPaperPlane/></Button>
-                <div className="text-white">Or email directly at jordy.mccollam@gmail.com</div>
+                <div className="text-white d-none d-lg-block">Or email directly at jordy.mccollam@gmail.com</div>
               </div>
             </form>
           </Col>

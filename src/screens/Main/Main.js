@@ -58,7 +58,7 @@ const Main = (props) => {
         </div>
       </Row>
 
-      <img src={profile} alt="profile image" className="profile-image flip-in-diag-2-br" />
+      <img src={profile} alt="profile image" className="profile-image flip-in-diag-2-br d-none d-lg-block" />
     </Container>
   )
 }

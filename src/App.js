@@ -12,7 +12,7 @@ function App() {
       <Container fluid className="px-0" >
         <Row className="full">
           <Col>
-            <Comp.Menu />
+            <Comp.Menu className="d-none d-lg-block" />
 
             <Screens.Main />
             <Screens.Projects />
