@@ -1,0 +1,19 @@
+@import "../../sass/variables";
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: $space-05;
+    overflow: hidden;
+    background-color: $primary;
+    color: $primary-10 !important;
+
+    h1 {
+        color: $primary-10 !important;
+    }
+
+    .content {
+        height: 100%;
+        padding-top: $space-15;
+    }
+}

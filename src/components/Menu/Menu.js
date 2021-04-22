@@ -4,6 +4,7 @@ import classnames from "classnames"
 import { Row, Col } from 'react-bootstrap';
 import logo from '../../logo-mono.png';
 import { FaUserCircle, FaGithub, FaProjectDiagram } from 'react-icons/fa';
+import { MdMail } from 'react-icons/md';
 
 import './_menu.scss';
 
@@ -19,6 +20,10 @@ const links = [
   {
     name: 'PROJECTS',
     icon: <FaProjectDiagram size={iconSize} />
+  },
+  {
+    name: 'CONTACT',
+    icon: <MdMail size={iconSize} />
   },
   {
     name: 'GITHUB',

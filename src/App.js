@@ -16,6 +16,7 @@ function App() {
 
             <Screens.Main />
             <Screens.Projects />
+            <Screens.Contact />
 
           </Col>
         </Row>
