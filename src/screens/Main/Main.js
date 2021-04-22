@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from 'prop-types'
 import classnames from "classnames"
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap'
 import { Card } from '../../components';
 import profile from '../../transparent.png';
 import moment from 'moment';
@@ -40,9 +40,9 @@ const Main = (props) => {
           <div className="content">
             <span className="font-weight-bold">Education</span>
             <div className="d-flex">
-              <Card className="content-item" ><img src={vandy} alt="image" className="content-image" /></Card>
-              <Card className="content-item" ><img src={aspnet} alt="image" className="content-image" /></Card>
-              <Card className="content-item" ><img src={python} alt="image" className="content-image" /></Card>
+              <Card className="content-item" id="vandy" tooltip="Vanderbilt Full Stack Coding Bootcamp (MERN)" ><img src={vandy} alt="image" className="content-image" /></Card>
+              <Card className="content-item" id="aspnet" tooltip="The Complete ASP.NET MVC 5 Course" ><img src={aspnet} alt="image" className="content-image" /></Card>
+              <Card className="content-item" id="python" tooltip="2021 Complete Python Bootcamp From Zero to Hero" ><img src={python} alt="image" className="content-image" /></Card>
             </div>
           </div>
         </div>
@@ -50,8 +50,9 @@ const Main = (props) => {
           <div className="content">
             <span className="font-weight-bold">Resume</span>
             <div className="d-flex">
-              <Card className="content-item" ><FaFilePdf size={50} /></Card>
-              <Card className="content-item" ><FaFileWord size={50} /></Card>
+
+              <Card className="content-item" id="download-pdf" tooltip="Download as PDF" ><FaFilePdf size={50} /></Card>
+              <Card className="content-item" id="download-word" tooltip="Download as WORD" ><FaFileWord size={50} /></Card>
             </div>
           </div>
         </div>
