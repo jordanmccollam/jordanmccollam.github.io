@@ -1,1 +1,14 @@
 @import "variables";
+
+.form-control {
+    border-radius: $radius !important;
+}
+
+.btn {
+    background: white !important;
+    color: $primary !important;
+
+    &:hover {
+        background: darken(white, 10%) !important;
+    }
+}
