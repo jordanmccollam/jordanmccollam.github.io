@@ -68,26 +68,29 @@ const Menu = (props) => {
   }, [])
 
   const handleScroll = () => {
-    if (window.scrollY >= levels[0] && window.scrollY < levels[1]) {setState('level-2');}
-    else if (window.scrollY >= levels[1] && window.scrollY < levels[2]) {setState('level-3');}
-    else if (window.scrollY >= levels[2] && window.scrollY < levels[3]) {setState('level-4');}
-    else if (window.scrollY >= levels[3] && window.scrollY < levels[4]) {setState('level-5');}
-    else if (window.scrollY >= levels[4] && window.scrollY < levels[5]) {setState('level-6');}
-    else if (window.scrollY >= levels[6] && window.scrollY < levels[7]) {setState('level-7');}
-    else if (window.scrollY >= levels[7] && window.scrollY < levels[8]) {setState('level-8');}
-    else if (window.scrollY >= levels[8] && window.scrollY < levels[9]) {setState('level-9');}
-    else if (window.scrollY >= levels[9] && window.scrollY < levels[10]) {setState('level-10');}
-    else if (window.scrollY >= levels[10] && window.scrollY) {setState('level-11');}
-    else {setState('level-1');}
+    const h = (window.innerHeight - 386);
+    const y = window.scrollY;
+    const t = 64;
 
-    if (window.scrollY < 830) {
-      setLogo(logo1);
-    } 
-    else if (window.scrollY >= 830 && window.scrollY < 1720) {
-      setLogo(logo3);
+    if (y >= h && y < h+t) {setState('level-2');}
+    else if (y >= h+t && y < h+(t*2)) {setState('level-3');}
+    else if (y >= h+(t*2) && y < h+(t*3)) {setState('level-4');}
+    else if (y >= h+(t*3) && y < h+(t*4)) {setState('level-5');}
+    else if (y >= h+(t*4) && y < (h*2)+(t*5)) {
+      setState('level-6');
+      if (y >= h+(t*5)) {setLogo(logo3)} else {setLogo(logo1)}
     }
-    else if (window.scrollY >= 1720) {
-      setLogo(logo2);
+    else if (y >= (h*2)+(t*5) && y < (h*2)+(t*6)) {setState('level-7');}
+    else if (y >= (h*2)+(t*6) && y < (h*2)+(t*7)) {setState('level-8');}
+    else if (y >= (h*2)+(t*7) && y < (h*2)+(t*8)) {setState('level-9');}
+    else if (y >= (h*2)+(t*8) && y < (h*2)+(t*9)) {setState('level-10');}
+    else if (y >= (h*2)+(t*9)) {
+      setState('level-11'); 
+      if (y >= (h*2)+(t*10)) {setLogo(logo2)} else {setLogo(logo3)};
+    }
+    else {
+      setState('level-1');
+      setLogo(logo1);
     }
   }
 
