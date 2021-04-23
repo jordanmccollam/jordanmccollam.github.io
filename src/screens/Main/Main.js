@@ -8,6 +8,7 @@ import moment from 'moment';
 import vandy from '../../assets/vandy.png';
 import aspnet from '../../assets/aspnet.png';
 import python from '../../assets/python.png';
+import nt from '../../assets/nt.png';
 import { FaFilePdf, FaFileWord } from 'react-icons/fa';
 
 import './_main.scss';
@@ -50,9 +51,16 @@ const Main = (props) => {
           <div className="content">
             <span className="font-weight-bold">Resume</span>
             <div className="d-flex">
-
               <Card className="content-item" id="download-pdf" tooltip="Download as PDF" ><FaFilePdf size={50} /></Card>
               <Card className="content-item" id="download-word" tooltip="Download as WORD" ><FaFileWord size={50} /></Card>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="content">
+            <span className="font-weight-bold">Work</span>
+            <div className="d-flex">
+              <Card className="content-item" id="Neurotargeting" tooltip="Neurotargeting" ><img src={nt} alt="image" className="content-image" /></Card>
             </div>
           </div>
         </div>
