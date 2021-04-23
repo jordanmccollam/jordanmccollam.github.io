@@ -12,6 +12,7 @@ import { FaFilePdf, FaFileWord } from 'react-icons/fa';
 import instaplan from '../../assets/instaplan.png';
 import smartdiary from '../../assets/smartdiary.png';
 import billsnsheet from '../../assets/billsnsheet.png';
+import laserdefender from '../../assets/laserdefender.jpeg';
 
 import './_projects.scss';
 
@@ -20,19 +21,27 @@ const logger = "Projects:: ";
 const projects = [
   {
     name: 'INSTAPLAN',
-    img: instaplan
+    img: instaplan,
+    link: 'https://insta-plan.herokuapp.com/',
+    tags: ['react', 'mongodb', 'mongoose', 'sass', 'node.js', 'express.js', 'auth0']
   },
   {
     name: 'SMART DIARY',
-    img: smartdiary
+    img: smartdiary,
+    link: 'https://smart-diary.herokuapp.com/',
+    tags: ['react', 'mongodb', 'mongoose', 'sass', 'node.js', 'express.js', 'auth0']
   },
   {
     name: "BILLS N' SHEET",
-    img: billsnsheet
+    img: billsnsheet,
+    link: 'https://billsnsheet.herokuapp.com/',
+    tags: ['react', 'mongodb', 'mongoose', 'sass', 'node.js', 'express.js', 'auth0']
   },
   {
-    name: "(REACT) CLICK GAME",
-    img: billsnsheet
+    name: "LASER DEFENDER",
+    img: laserdefender,
+    link: 'https://jordanmccollam.github.io/laserdefender/',
+    tags: ['unity', 'c#']
   },
 ]
 
