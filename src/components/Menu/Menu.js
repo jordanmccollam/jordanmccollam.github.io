@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import classnames from "classnames"
 import { Row, Col } from 'react-bootstrap';
 import logo from '../../logo-mono.png';
-import { FaUserCircle, FaGithub, FaProjectDiagram } from 'react-icons/fa';
+import { FaUserCircle, FaGithub, FaProjectDiagram, FaLinkedinIn } from 'react-icons/fa';
 import { MdMail } from 'react-icons/md';
 
 import './_menu.scss';
@@ -28,7 +28,11 @@ const links = [
   {
     name: 'GITHUB',
     icon: <FaGithub size={iconSize} />
-  }
+  },
+  {
+    name: 'LINKEDIN',
+    icon: <FaLinkedinIn size={iconSize} />
+  },
 ]
 
 const Menu = (props) => {
@@ -40,6 +44,9 @@ const Menu = (props) => {
     switch(name) {
       case 'GITHUB':
         window.open("https://github.com/jordanmccollam");
+        break;
+      case 'LINKEDIN':
+        window.open("https://www.linkedin.com/in/jordan-mccollam/");
         break;
       default: 
         var elmnt = document.getElementById(name.toLowerCase());
