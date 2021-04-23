@@ -7,10 +7,11 @@ import { Spinner } from 'react-bootstrap';
 import './App.scss';
 
 function App() {
+
   return (
     <div className="App">
       <Container fluid className="px-0" >
-        <Row className="full">
+        <Row>
           <Col>
             <Comp.Menu className="d-none d-lg-block" />
 
