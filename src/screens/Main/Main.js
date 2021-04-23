@@ -51,8 +51,8 @@ const Main = (props) => {
           <div className="content">
             <span className="font-weight-bold">Resume</span>
             <div className="d-flex">
-              <Card className="content-item" id="download-pdf" tooltip="Click to Download as PDF" ><FaFilePdf size={50} /></Card>
-              <Card className="content-item" id="download-word" tooltip="Click to Download as WORD" ><FaFileWord size={50} /></Card>
+              <Card className="content-item" id="download-pdf" tooltip="Click to Download as PDF" ><a href={'../../assets/mccollamresume.pdf'} download ><FaFilePdf size={50} /></a></Card>
+              <Card className="content-item" id="download-word" tooltip="Click to Download as DOCX" ><a href={'../../assets/mccollamresume.docx'} download><FaFileWord size={50} /></a></Card>
             </div>
           </div>
         </div>
