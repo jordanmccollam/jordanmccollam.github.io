@@ -68,7 +68,6 @@ const Menu = (props) => {
   }, [])
 
   const handleScroll = () => {
-    console.log(window.scrollY)
     if (window.scrollY >= levels[0] && window.scrollY < levels[1]) {setState('level-2');}
     else if (window.scrollY >= levels[1] && window.scrollY < levels[2]) {setState('level-3');}
     else if (window.scrollY >= levels[2] && window.scrollY < levels[3]) {setState('level-4');}
