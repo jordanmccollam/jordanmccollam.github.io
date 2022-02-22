@@ -3,14 +3,28 @@
 .menu {
     position: fixed;
     left: -10px;
-    top: $space-05;
+    // top: $space-05;
     padding-left: 10px;
     z-index: 5;
 
+    &-links {
+        position: absolute;
+        top: 320px;
+    }
+
     .logo {
         width: 5em;
-        border-bottom: 1px solid $primary;
+        // border-bottom: 1px solid $primary;
         padding: 0 $space-01 $space-03 $space-02;
+    }
+
+    .profilePic {
+        width: 60em;
+        // border-bottom: 1px solid $primary;
+        // padding: 0 $space-01 $space-03 $space-02;
+        position: absolute;
+        top: -95px;
+        left: -330px;
     }
 
     &-link {
