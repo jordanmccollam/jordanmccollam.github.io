@@ -20,6 +20,12 @@
         .pic {
             height: inherit;
             width: inherit;
+            cursor: pointer;
+            transition: $transition; 
+
+            &:hover {
+                transform: scale(1.5); 
+            }
         }
     }
 
@@ -49,6 +55,37 @@
         .shell {
             width: 3.5em;
             top: -.5em;
+        }
+    }
+
+    &-description {
+        position: absolute;
+        left: -21em;
+        top:-2.5em;
+        transition: $transition;
+
+        .description-container {
+            position: relative;
+            width: 24em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-bubble {
+            width: 100%;
+            // position: absolute;
+            opacity: 0.1;
+        }
+
+        &-text {
+            font-size: $text-01;
+            position: absolute;
+            width: 65%;
+            text-align: center;
+            // top: 50%;
+            // // left: 50%;
+            // transform: translate(-50%, -50%);
         }
     }
 }

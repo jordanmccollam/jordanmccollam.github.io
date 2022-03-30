@@ -34,12 +34,12 @@ const Main = (props) => {
 
       {/* Achievements */}
       <div className="achievements d-none d-lg-flex">
-        <div className="achievement-row"><Achievement pic={nt} bigger /></div>
-        <div className="achievement-row"><Achievement pic={vandy} /></div>
-        <div className="achievement-row"><Achievement pic={python} /></div>
-        {/* <div className="achievement-row"><Achievement pic={aspnet} bigger /></div> */}
-        <div className="achievement-row"><Achievement pic={aspnet} biggerAndDown /></div>
-        <div className="achievement-row"><Achievement pic={unity} nudgeLeft /></div>
+        <div className="achievement-instructions">Check out my qualifications</div>
+        <div className="achievement-row"><Achievement pic={nt} description={`Jordan worked for Neurotargeting`} bigger /></div>
+        <div className="achievement-row"><Achievement pic={vandy} description="Jordan is certified by the Vanderbilt Full-stack Web Developer Course" /></div>
+        <div className="achievement-row"><Achievement pic={unity} description="Jordan makes games with unity and C#" nudgeLeft /></div>
+        <div className="achievement-row"><Achievement pic={aspnet} description="Jordan is certified by the Complete ASP.NET MVC 5 Course" biggerAndDown /></div>
+        {/* <div className="achievement-row"><Achievement pic={python} description="Jordan is learning Python from the Complete Python Bootcamp" /></div> */}
       </div>
     </Container>
   )

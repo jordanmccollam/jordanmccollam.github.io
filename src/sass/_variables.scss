@@ -81,6 +81,7 @@ $green-3: hsl(97,73%,85%);
  */
 
 $light: #efefef;
+$warning: $yellow;
 
 /*
  *  UI
@@ -95,7 +96,7 @@ $transition: .4s;
 
 // $font-primary: 'Montserrat', sans-serif;
 $font-primary: 'Anton', sans-serif;
-$font-secondary: 'Anton', sans-serif;
+$font-secondary: 'Montserrat', sans-serif;
 
 $shadow-color: rgba(0,0,0,0.3);
 $shadow: 2px 2px 5px $shadow-color;

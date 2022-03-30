@@ -28,13 +28,14 @@
         
         path,
         &-name {
-            color: $yellow-3;
+            color: $bg;
         }
         &-name {
             margin-right: $space-01;
             opacity: 0;
             font-size: $text-02;
             padding-top: .2rem;
+            font-family: $font-primary !important;
         }
 
         &:hover {

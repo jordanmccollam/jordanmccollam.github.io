@@ -1,6 +1,8 @@
 @import "../../sass/variables";
 
 .header {
+    font-family: $font-primary;
+    line-height: 1em;
     text-transform: uppercase;
     font-weight: bolder;
     // width: fit-content;

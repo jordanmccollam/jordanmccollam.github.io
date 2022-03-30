@@ -1,9 +1,9 @@
 @import "variables";
 
 * {
-  font-family: $font-primary;
+  font-family: $font-secondary;
   color: $text-color;
-  line-height: 1em;
+  line-height: normal;
 }
 
 h1, h2 {

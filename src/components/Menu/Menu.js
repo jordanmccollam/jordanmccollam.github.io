@@ -99,7 +99,7 @@ const Menu = (props) => {
   return (
     <div className={`${props.className} ${classnames(classes)}`}>
       {/* <img src={logo} alt="logo" className="logo" /> */}
-      <img src={profileCircle} alt="logo" className="profile-circle" />
+      <img src={profileCircle} alt="logo" className="profile-circle avoid-clicks" />
 
       <div className="menu-links">
         {links.map((link, i) => (
