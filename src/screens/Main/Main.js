@@ -33,7 +33,7 @@ const Main = (props) => {
       </div>
 
       {/* Achievements */}
-      <div className="achievements">
+      <div className="achievements d-none d-lg-block">
         <div className="achievement-row"><Achievement pic={nt} bigger /></div>
         <div className="achievement-row"><Achievement pic={vandy} /></div>
         <div className="achievement-row"><Achievement pic={python} /></div>
