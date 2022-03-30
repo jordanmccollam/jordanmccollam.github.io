@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import classnames from "classnames"
 import { Row, Col } from 'react-bootstrap';
 import instaplan from '../../assets/instaplan.png';
+import { FaGithub } from 'react-icons/fa';
 
 import './_project.scss';
 
@@ -14,18 +15,19 @@ const Project = (props) => {
 	};
 
   return (
-    <div className={`${props.className} ${classnames(classes)}`} onClick={() => window.open(props.project.link)}>
+    <div className={`${props.className} ${classnames(classes)}`}>
       <div className="project-bar">
         <div className="red-dot"></div>
         <div className="yellow-dot"></div>
         <div className="green-dot"></div>
+        <div className="github-link" onClick={() => window.open(props.project.github)}><FaGithub size={'100%'} /></div>
         {props.project.name}
       </div>
 
-      <div className="project-content">
+      <div className="project-content" onClick={() => window.open(props.project.link)}>
         <img src={props.project.img} alt={props.project.name} className="project-content-img" />
         <div className="project-overlay">
-          <div className="text-white">Click to visit page</div>
+          <div className="text-white font-primary">Click to visit page</div>
           <div className="project-tags">
             {props.project.tags.map((tag, i) => (
               <div key={`${props.project.name.replace(/\s+/g, '')}-tag-${i}`} className="project-tag">{tag}</div>
@@ -45,7 +47,7 @@ Project.propTypes = {
 
 Project.defaultProps = {
   className: "",
-  project: {name: 'PROJECT', img: instaplan, tags: ['tag'], link: 'https://insta-plan.herokuapp.com/'},
+  project: {name: 'PROJECT', img: instaplan, tags: ['tag'], link: 'https://insta-plan.herokuapp.com/', github: 'https://github.com/jordanmccollam/instaplan'},
 }
 
 export default Project;

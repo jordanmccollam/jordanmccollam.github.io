@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from 'prop-types'
 import classnames from "classnames"
 import { Container, Row, Col, Form, Button } from 'react-bootstrap'
-import { Card } from '../../components';
+import { Card, Header } from '../../components';
 import { FaPaperPlane } from 'react-icons/fa';
 
 import './_contact.scss';
@@ -17,9 +17,10 @@ const Contact = (props) => {
   return (
     <div className={`${props.className} ${classnames(classes)}`} id="contact">
       <Container className="h-100">
-        <h1 className="tracking-in-expand">CONTACT</h1>
+        {/* <h1 className="tracking-in-expand">CONTACT</h1> */}
+        <Header color="white" size="md" className="text-center">CONTACT</Header>
 
-        <Row className="content swing-top-fwd justify-content-center">
+        <Row className="content justify-content-center">
           <Col lg={8}>
             <h5 className="text-white">Let's talk!</h5>
             <form action="https://formspree.io/f/jordy.mccollam@gmail.com" method="POST" >

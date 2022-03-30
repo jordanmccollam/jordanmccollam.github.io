@@ -25,6 +25,9 @@
         transition: $transition;
         position: absolute;
         left: -$space-13;
+        border-right: 2px solid $bg;
+        border-top: 2px solid $bg;
+        border-bottom: 2px solid $bg;
         
         path,
         &-name {
@@ -56,7 +59,7 @@
     // &-level-5,
     // &-level-6 {
     //     .menu-link:nth-child(6) {
-    //         background-color: $yellow-3;
+    //         background-color: $bg;
     //         path,
     //         .menu-link-name {
     //             color: $yellow-2;
@@ -70,7 +73,7 @@
     // &-level-6,
     // &-level-7 {
     //     .menu-link:nth-child(5) {
-    //         background-color: $yellow-3;
+    //         background-color: $bg;
     //         path,
     //         .menu-link-name {
     //             color: $yellow-2;
@@ -84,7 +87,7 @@
     // &-level-7,
     // &-level-8 {
     //     .menu-link:nth-child(4) {
-    //         background-color: $yellow-3;
+    //         background-color: $bg;
     //         path,
     //         .menu-link-name {
     //             color: $yellow-2;
@@ -98,7 +101,7 @@
     // &-level-8,
     // &-level-9 {
     //     .menu-link:nth-child(3) {
-    //         background-color: $yellow-3;
+    //         background-color: $bg;
     //         path,
     //         .menu-link-name {
     //             color: $yellow-2;
@@ -112,7 +115,7 @@
     // &-level-9,
     // &-level-10 {
     //     .menu-link:nth-child(2) {
-    //         background-color: $yellow-3;
+    //         background-color: $bg;
     //         path,
     //         .menu-link-name {
     //             color: $yellow-2;

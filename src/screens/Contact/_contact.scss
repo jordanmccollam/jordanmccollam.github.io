@@ -5,12 +5,8 @@
     min-height: 100vh;
     padding: $space-05;
     overflow: hidden;
-    background-color: $green;
+    background-color: $bg;
     color: $green-2 !important;
-
-    h1 {
-        color: $green-2 !important;
-    }
 
     .content {
         height: 100%;

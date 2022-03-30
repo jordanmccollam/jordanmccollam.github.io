@@ -5,11 +5,12 @@
     min-height: 100vh;
     padding: $space-05;
     overflow: hidden;
-    background-color: $green-2;
+    background-color: $yellow;
     color: $bg !important;
+    text-align: center;
 
     .content {
         height: 100%;
-        padding-top: $space-15;
+        padding-top: $space-08;
     }
 }

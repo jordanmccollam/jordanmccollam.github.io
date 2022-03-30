@@ -28,7 +28,7 @@ Header.propTypes = {
     PropTypes.element
   ]),
   className: PropTypes.string,
-  color: PropTypes.oneOf(["white", "yellow"]),
+  color: PropTypes.oneOf(["white", "yellow", "bg"]),
   size: PropTypes.oneOf(["sm", "md", "lg"]),
   useBorder: PropTypes.bool 
 }
@@ -36,7 +36,7 @@ Header.propTypes = {
 Header.defaultProps = {
   className: "",
   children: "Header",
-  color: "white",
+  color: "bg",
   size: "md",
   useBorder: false
 }

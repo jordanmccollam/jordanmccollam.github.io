@@ -15,9 +15,9 @@
         justify-content: center;
         align-items: center;
         // background-color: #dddddd;
-        background-color: $green-3;
+        background-color: $yellow-5;
         // color: #6a6a6a;
-        color: $green;
+        color: $grey;
         font-weight: bold;
         border-top-left-radius: $radius;
         border-top-right-radius: $radius;
@@ -44,6 +44,25 @@
             background-color: #27ca40;
             left: 3em;
         }
+        .github-link {
+            position: absolute;
+            z-index: 9;
+            right: -.8em;
+            background-color: $bg;
+            border-radius: 100%;
+            transform: rotate(10deg);
+            width: 2em;
+
+            &:hover {
+                transform: scale(1.5);
+                transition: $transition;
+            }
+
+            // path,
+            // &-name {
+            //     color: $bg;
+            // }
+        }
     }
 
     &-content {
@@ -65,7 +84,7 @@
     &-overlay {
         position: absolute;
         top: 0;
-        background-color: transparentize(darken($green, 10%), 0.1);
+        background-color: transparentize($bg, 0.1);
         width: 100%;
         height: 100%;
         border-bottom-right-radius: $radius;
@@ -92,7 +111,7 @@
     }
 
     &-tag {
-        background: $green-2;
+        background: $yellow-2;
         width: min-content;
         border-radius: $radius;
         padding: 5px 15px;
