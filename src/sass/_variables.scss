@@ -62,9 +62,9 @@ $space-00: 0.25rem;
  *  COLORS
  */
 
-$yellow: hsl(40,93%,68%);
-$yellow-2: hsl(39,86%,55%);
-$yellow-3: hsl(40,93%,45%);
+$yellow: #F3BD51;
+$yellow-2: darken($yellow, 15%);
+$yellow-3: darken($yellow, 30%);
 
 $grey: hsl(211,37%,11%);
 $grey-2: hsl(214,36%,14%);

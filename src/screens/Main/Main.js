@@ -9,7 +9,6 @@ import vandy from '../../assets/vandy.png';
 import aspnet from '../../assets/aspnet.png';
 import python from '../../assets/python.png';
 import nt from '../../assets/nt.png';
-import spotlight from '../../assets/spotlight.png';
 import { FaFilePdf, FaFileWord } from 'react-icons/fa';
 
 import './_main.scss';
@@ -23,7 +22,6 @@ const Main = (props) => {
 
   return (
     <Container fluid className={`${props.className} ${classnames(classes)}`} id="about">
-      {/* <img src={spotlight} alt="spotlight" className="spotlight"/> */}
       <div className="full center pb-5">
         <div className="flip-in-diag-2-br text-center">
           <Header color="yellow" size="lg">Jordan</Header>
