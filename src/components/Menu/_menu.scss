@@ -14,13 +14,13 @@
 
     .logo {
         width: 5em;
-        // border-bottom: 1px solid $primary;
+        // border-bottom: 1px solid $green;
         padding: 0 $space-01 $space-03 $space-02;
     }
 
     .profilePic {
         width: 60em;
-        // border-bottom: 1px solid $primary;
+        // border-bottom: 1px solid $green;
         // padding: 0 $space-01 $space-03 $space-02;
         position: absolute;
         top: -95px;
@@ -28,7 +28,7 @@
     }
 
     &-link {
-        background-color: $primary;
+        background-color: $green;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -45,7 +45,7 @@
         
         path,
         &-name {
-            color: $primary-00;
+            color: $green-3;
         }
         &-name {
             margin-right: $space-01;
@@ -55,7 +55,7 @@
 
         &:hover {
             transition: $transition;
-            background-color: darken($primary, 5%);
+            background-color: darken($green, 5%);
             left: 0;
             .menu-link-name {
                 transition: $transition;
@@ -71,10 +71,10 @@
     &-level-5,
     &-level-6 {
         .menu-link:nth-child(6) {
-            background-color: $primary-00;
+            background-color: $green-3;
             path,
             .menu-link-name {
-                color: $primary-10;
+                color: $green-2;
             }
         }
     }
@@ -85,10 +85,10 @@
     &-level-6,
     &-level-7 {
         .menu-link:nth-child(5) {
-            background-color: $primary-00;
+            background-color: $green-3;
             path,
             .menu-link-name {
-                color: $primary-10;
+                color: $green-2;
             }
         }
     }
@@ -99,10 +99,10 @@
     &-level-7,
     &-level-8 {
         .menu-link:nth-child(4) {
-            background-color: $primary-00;
+            background-color: $green-3;
             path,
             .menu-link-name {
-                color: $primary-10;
+                color: $green-2;
             }
         }
     }
@@ -113,10 +113,10 @@
     &-level-8,
     &-level-9 {
         .menu-link:nth-child(3) {
-            background-color: $primary-00;
+            background-color: $green-3;
             path,
             .menu-link-name {
-                color: $primary-10;
+                color: $green-2;
             }
         }
     }
@@ -127,10 +127,10 @@
     &-level-9,
     &-level-10 {
         .menu-link:nth-child(2) {
-            background-color: $primary-00;
+            background-color: $green-3;
             path,
             .menu-link-name {
-                color: $primary-10;
+                color: $green-2;
             }
         }
     }
@@ -142,10 +142,10 @@
     &-level-10,
     &-level-11 {
         .menu-link:nth-child(6) {
-            background-color: $primary-10;
+            background-color: $green-2;
             path,
             .menu-link-name {
-                color: $primary;
+                color: $green;
             }
         }
     }
@@ -155,10 +155,10 @@
     &-level-10,
     &-level-11 {
         .menu-link:nth-child(5) {
-            background-color: $primary-10;
+            background-color: $green-2;
             path,
             .menu-link-name {
-                color: $primary;
+                color: $green;
             }
         }
     }
@@ -167,10 +167,10 @@
     &-level-10,
     &-level-11 {
         .menu-link:nth-child(4) {
-            background-color: $primary-10;
+            background-color: $green-2;
             path,
             .menu-link-name {
-                color: $primary;
+                color: $green;
             }
         }
     }
@@ -178,20 +178,20 @@
     &-level-10,
     &-level-11 {
         .menu-link:nth-child(3) {
-            background-color: $primary-10;
+            background-color: $green-2;
             path,
             .menu-link-name {
-                color: $primary;
+                color: $green;
             }
         }
     }
     // ABOUT LV3
     &-level-11 {
         .menu-link:nth-child(2) {
-            background-color: $primary-10;
+            background-color: $green-2;
             path,
             .menu-link-name {
-                color: $primary;
+                color: $green;
             }
         }
     }

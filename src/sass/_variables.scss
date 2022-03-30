@@ -29,9 +29,9 @@ $desktop-up: "(min-width: #{$desktop})";
 /*
  *  Font Sizes
  */
-$text-06: 3.375em;
-$text-05: 2.625em;
-$text-04: 2em;
+$text-06: 12em;
+$text-05: 7em;
+$text-04: 4.3em;
 $text-03: 1.75em;
 $text-02: 1.25em;
 $text-01: 1em;
@@ -62,75 +62,39 @@ $space-00: 0.25rem;
  *  COLORS
  */
 
-// Blue
-$blue-20: #1f2a5a;
-$blue-10: #5B7EDD;
-$blue-00: #B7D0FF;
+$yellow: hsl(40,93%,68%);
+$yellow-2: hsl(39,86%,55%);
+$yellow-3: hsl(40,93%,45%);
 
-// Green
-$green-80: #082a22;
-$green-70: #115344;
-$green-60: #197d67;
-$green-50: #22a689;
-$green-40: #2ad0ab; // primary
-$green-30: #55d9bc;
-$green-20: #7fe3cd;
-$green-10: #aaecdd;
-$green-00: #d4f6ee;
+$grey: hsl(211,37%,11%);
+$grey-2: hsl(214,36%,14%);
+$grey-3: hsl(216,34%,17%);
+$grey-4: hsl(212,37%,20%);
+$grey-5: hsl(212,36%,29%);
 
-// Yellow
-$yellow-60: #5c4818;
-$yellow-50: #8b6d27;
-$yellow-40: #c9a447;
-$yellow-30: #f3c96c;
-$yellow-20: #fae1a3;
-$yellow-10: #fdf3d9;
-$yellow-00: #fffcf5;
-
-// Red
-$red-60: #60191a;
-$red-50: #881c1f;
-$red-40: #b62226;
-$red-30: #da3336;
-$red-20: #e26567;
-$red-10: #f4abab;
-$red-00: #fce8e8;
-
-// Grey
-$grey-40: #2E2E2E;
-$grey-30: #595959;
-$grey-20: #888888;
-$grey-10: #BABABA;
-$grey-00: #EFEFEF;
-
-// $primary: hsl(220, 59%, 40%);
-// $primary-20: hsl(220, 59%, 40%);
-// $primary-10: hsl(220, 59%, 65%);
-// $primary-00: hsl(220, 59%, 85%);
-
-$primary: hsl(97,73%,43%);
-$primary-20: hsl(220, 59%, 40%);
-$primary-10: hsl(220, 59%, 65%);
-$primary-00: hsl(220, 59%, 85%);
+$green: hsl(97,73%,43%);
+$green-2: hsl(97,73%,65%);
+$green-3: hsl(97,73%,85%);
 
 /*
  *  BOOTSTRAP OVERRIDES
  */
 
-$light: #ac9c97;
+$light: #efefef;
 
 /*
  *  UI
  */
-$bg: $primary-00;
-$text-color: $primary-20;
+$bg: $grey-4;
+$text-color: $light;
 $text-alt: $bg;
 
 $radius: 5px;
 
 $transition: .4s;
 
-$font-primary: 'Montserrat', sans-serif;
+// $font-primary: 'Montserrat', sans-serif;
+$font-primary: 'Anton', sans-serif;
 $font-secondary: 'Anton', sans-serif;
 
 $shadow-color: rgba(0,0,0,0.3);

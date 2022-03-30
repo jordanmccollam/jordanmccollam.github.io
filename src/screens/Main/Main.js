@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import PropTypes from 'prop-types'
 import classnames from "classnames"
 import { Container, Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap'
-import { Card } from '../../components';
+import { Card, Header } from '../../components';
 import profile from '../../transparent.png';
 import moment from 'moment';
 import vandy from '../../assets/vandy.png';
 import aspnet from '../../assets/aspnet.png';
 import python from '../../assets/python.png';
 import nt from '../../assets/nt.png';
+import spotlight from '../../assets/spotlight.png';
 import { FaFilePdf, FaFileWord } from 'react-icons/fa';
 
 import './_main.scss';
@@ -21,52 +22,15 @@ const Main = (props) => {
 	};
 
   return (
-    <Container className={`${props.className} ${classnames(classes)}`} id="about">
-      <h1 className="tracking-in-expand">JORDAN MCCOLLAM</h1>
-      <h2 className="tracking-in-expand text-lighter">SOFTWARE DEVELOPER</h2>
-
-      <div className="content swing-top-fwd">
-        <span className="font-weight-bold">Hello world! Here's a little bit about me...</span>
-        <br/> I am {moment().diff('1997-11-17', 'years')} years old and married to the beautiful Leesha McCollam.
-        <br/> I've gained experience working for Neurotargeting,
-        <br/> developing information-heavy interfaces for medical use.
-        <br/> I first learned problem solving skills as an audio engineer,
-        <br/> which helped me as I quickly fell in love with programming.
-        <br/> Then I attended the Vanderbilt Full Stack Coding Bootcamp 
-        <br/> and completed other courses on Udemy as well.
+    <Container fluid className={`${props.className} ${classnames(classes)}`} id="about">
+      {/* <img src={spotlight} alt="spotlight" className="spotlight"/> */}
+      <div className="full center pb-5">
+        <div className="flip-in-diag-2-br text-center">
+          <Header color="yellow" size="lg">Jordan</Header>
+          <Header color="yellow" size="md" useBorder>McCollam</Header>
+          <Header color="yellow" size="sm" className="mt-2">Software Developer</Header>
+        </div>
       </div>
-      
-      <Row className="swing-top-fwd">
-        <div>
-          <div className="content">
-            <span className="font-weight-bold">Education</span>
-            <div className="d-flex">
-              <Card className="content-item" id="vandy" tooltip="Vanderbilt Full Stack Coding Bootcamp (MERN)" ><img src={vandy} alt="image" className="content-image" /></Card>
-              <Card className="content-item" id="aspnet" tooltip="The Complete ASP.NET MVC 5 Course" ><img src={aspnet} alt="image" className="content-image" /></Card>
-              <Card className="content-item" id="python" tooltip="2021 Complete Python Bootcamp From Zero to Hero" ><img src={python} alt="image" className="content-image" /></Card>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="content">
-            <span className="font-weight-bold">Resume</span>
-            <div className="d-flex">
-              <Card className="content-item" id="download-pdf" tooltip="Click to Download as PDF" ><a href={'../../assets/mccollamresume.pdf'} download ><FaFilePdf size={50} /></a></Card>
-              <Card className="content-item" id="download-word" tooltip="Click to Download as DOCX" ><a href={'../../assets/mccollamresume.docx'} download><FaFileWord size={50} /></a></Card>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="content">
-            <span className="font-weight-bold">Work</span>
-            <div className="d-flex">
-              <Card className="content-item" id="Neurotargeting" tooltip="Neurotargeting" ><img src={nt} alt="image" className="content-image" /></Card>
-            </div>
-          </div>
-        </div>
-      </Row>
-
-      <img src={profile} alt="profile image" className="profile-image flip-in-diag-2-br d-none d-lg-block" />
     </Container>
   )
 }
