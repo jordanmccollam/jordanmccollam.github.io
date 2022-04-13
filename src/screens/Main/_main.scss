@@ -6,6 +6,10 @@
     padding: $space-05;
     overflow: hidden;
 
+    .main-section {
+        position: relative;
+    }
+
     .profile-image {
         width: 42vw;
         position: absolute;
@@ -55,6 +59,21 @@
             text-align: center;
             padding-bottom: $space-01;
             margin-bottom: $space-09;
+        }
+    }
+
+    .about-section {
+        // background-color: $yellow-2;
+        background: linear-gradient($yellow, $yellow-2);
+        padding: 1em 0;
+        margin-bottom: 2em;
+        position: relative;
+
+        .size-adjuster {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-top: 1em;
         }
     }
 }
