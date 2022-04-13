@@ -6,10 +6,22 @@
     padding: $space-05;
     overflow: hidden;
     background-color: $bg;
-    color: $green-2 !important;
 
     .content {
         height: 100%;
         padding-top: $space-15;
+    }
+
+    .send-btn {
+        position: relative;
+        color: $bg;
+        path,
+        &-name {
+            color: $bg;
+        }
+
+        .send-txt {
+            color: $bg !important;
+        }
     }
 }

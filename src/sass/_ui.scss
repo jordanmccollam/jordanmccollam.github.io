@@ -2,13 +2,9 @@
 
 .form-control {
     border-radius: $radius !important;
+    font-family: $font-secondary;
 }
 
 .btn {
-    background: white !important;
-    color: $green !important;
-
-    &:hover {
-        background: darken(white, 10%) !important;
-    }
+    font-family: $font-secondary;
 }

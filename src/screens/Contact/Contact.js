@@ -18,18 +18,18 @@ const Contact = (props) => {
     <div className={`${props.className} ${classnames(classes)}`} id="contact">
       <Container className="h-100">
         {/* <h1 className="tracking-in-expand">CONTACT</h1> */}
-        <Header color="white" size="md" className="text-center">CONTACT</Header>
+        <Header color="yellow" size="md" className="text-center pt-5">CONTACT</Header>
 
         <Row className="content justify-content-center">
           <Col lg={8}>
-            <h5 className="text-white">Let's talk!</h5>
+            <h5 className="text-yellow">Let's talk!</h5>
             <form action="https://formspree.io/f/jordy.mccollam@gmail.com" method="POST" >
               <Form.Control placeholder="Email" type="email" name="_replyto" />
               <Form.Control className="mt-2" placeholder="Subject" name="subject" />
               <Form.Control className="mt-2" as="textarea" rows={5} placeholder="Message" name="message" />
               <div className="d-flex justify-content-between mt-2">
-                <Button type="submit">Send <FaPaperPlane/></Button>
-                <div className="text-white d-none d-lg-block">Or email directly at jordy.mccollam@gmail.com</div>
+                <Button type="submit" variant="light" className="send-btn px-5" ><span className="send-txt">Send</span> <span className="send-icon"><FaPaperPlane/></span></Button>
+                <div className="text-yellow d-none d-lg-block">Or email directly at jordy.mccollam@gmail.com</div>
               </div>
             </form>
           </Col>
