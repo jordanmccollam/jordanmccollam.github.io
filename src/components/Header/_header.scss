@@ -14,6 +14,9 @@
 
     &-yellow {
         color: $yellow;
+        text-shadow: -2px -2px 0 $bg, 2px -2px 0 $bg, -2px 2px 0 $bg, 2px 2px 0 $bg;
+        position: relative;
+        z-index: 2;
     }
 
     &-bg {

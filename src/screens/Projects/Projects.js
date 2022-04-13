@@ -13,6 +13,7 @@ import instaplan from '../../assets/instaplan.png';
 import smartdiary from '../../assets/smartdiary.png';
 import billsnsheet from '../../assets/billsnsheet.png';
 import laserdefender from '../../assets/laserdefender.jpeg';
+import shapesBg from '../../assets/shapes.png';
 
 import './_projects.scss';
 
@@ -56,11 +57,12 @@ const Projects = (props) => {
 
   return (
     <div className={`${props.className} ${classnames(classes)}`} id="projects">
+      <img src={shapesBg} alt="shapes" className="shapes-bg" />
       <Container className="h-100">
         {/* <h1 className="tracking-in-expand text-alt">PROJECTS</h1> */}
-        <Header color="bg" size="md">PROJECTS</Header>
+        <Header color="yellow" size="md" className="pt-5">PROJECTS</Header>
 
-        <Row className="content justify-content-center">
+        <Row className="content justify-content-center front-section">
           <Col lg={10}>
             <Row>
               {projects.map((project, i) => (

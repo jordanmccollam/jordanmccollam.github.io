@@ -2,15 +2,27 @@
 
 .projects {
     position: relative;
-    min-height: 100vh;
-    padding: $space-05;
+    min-height: 110vh;
+    // padding: $space-05;
     overflow: hidden;
-    background-color: $yellow;
-    color: $bg !important;
     text-align: center;
 
     .content {
         height: 100%;
         padding-top: $space-08;
+    }
+
+    .shapes-bg {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        opacity: .5;
+    }
+    
+    .front-section {
+        position: relative;
+        z-index: 9;
     }
 }
