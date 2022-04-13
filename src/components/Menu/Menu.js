@@ -5,8 +5,7 @@ import { Row, Col } from 'react-bootstrap';
 import logo1 from '../../logo-mono.png';
 import logo2 from '../../assets/logo-2.png';
 import logo3 from '../../assets/logo-3.png';
-import profilePic from '../../assets/profileCircle.png';
-import profileCircle from '../../assets/profileCircle.png';
+import profileCircle from '../../assets/circleNoShadow.png';
 import { FaUserCircle, FaGithub, FaProjectDiagram, FaLinkedinIn } from 'react-icons/fa';
 import { MdMail } from 'react-icons/md';
 
