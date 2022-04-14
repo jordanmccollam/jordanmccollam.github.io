@@ -25,12 +25,21 @@
 
     &-lg {
         font-size: $text-06;
+        @media screen and (max-width: $phablet) {
+            font-size: $text-05 !important;
+        }
     }
     &-md {
         font-size: $text-05;
+        @media screen and (max-width: $phablet) {
+            font-size: $text-04 !important;
+        }
     }
     &-sm {
         font-size: $text-04;
+        @media screen and (max-width: $phablet) {
+            font-size: $text-03 !important;
+        }
     }
 
     &-border {

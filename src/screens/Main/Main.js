@@ -63,7 +63,7 @@ const Main = (props) => {
 
       <Container className="about-section px-5">
         <Header color="white" size="sm" className="pb-3">ABOUT </Header>
-        <div className="size-adjuster pr-5">
+        <div className="size-adjuster pr-5 d-none d-md-block">
           <div className="font-weight-bold">Adjust the size of Jordan's bio</div>
           <div className="d-flex justify-content-center align-items-center mt-2">
             <Button onClick={() => setBioSize("sm")} variant={`${bioSize == "sm" ? "light" : "outline-light"}`} size="sm" className="mr-2"></Button>
