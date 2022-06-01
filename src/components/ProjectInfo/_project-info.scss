@@ -1,0 +1,65 @@
+@import "../../sass/variables";
+
+.project-info {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    width: 86%;
+    z-index: 2;
+
+    border-radius: $radius;
+    background-color: rgba(darken($bg, 5), .9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: $space-04;
+    padding-bottom: $space-04;
+
+    .info {
+        width: 100%;
+        word-wrap: break-word;
+        text-align: left;
+        font-size: $text-01;
+        padding-left: $space-09;
+        padding-right: $space-09;
+    }
+
+    h6 {
+        font-family: $font-primary;
+        font-size: $text-02;
+        color: $yellow;
+        margin-top: $space-04;
+    }
+
+    .buttons {
+        margin-top: $space-04;
+    }
+
+    .project-tags {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: left;
+        position: absolute;
+        bottom: -2em;
+    }
+
+    .project-tag {
+        background: $yellow-2;
+        width: min-content;
+        border-radius: $radius;
+        padding: 4px 8px;
+        // margin: $space-00;
+        text-transform: uppercase;
+        font-size: .7em;
+        font-weight: bold;
+        margin-right: .2em;
+        margin-bottom: .2em;
+    }
+
+    .info-sub-header {
+        font-size: $text-00;
+        color: $yellow-2;
+        font-weight: bold;
+        margin-right: 1em;
+    }
+}

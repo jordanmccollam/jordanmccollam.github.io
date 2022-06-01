@@ -1,3 +1,4 @@
+import ProjectInfo from "./ProjectInfo/ProjectInfo";
 import Achievement from "./Achievement/Achievement";
 import Header from "./Header/Header";
 import Project from "./Project/Project";
@@ -6,6 +7,7 @@ import Menu from "./Menu/Menu";
 
 
 export {
+  ProjectInfo,
   Achievement,
   Header,
   Project,

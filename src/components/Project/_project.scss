@@ -1,14 +1,17 @@
 @import "../../sass/variables";
 
 .project {
-    margin-bottom: $space-05;
+    width: 100%;
+    z-index: 1;
+
+    // margin-bottom: $space-04;
     transition: $transition;
     cursor: pointer;
 
-    &:hover {
-        transform: scale(1.05);
-        transition: $transition;
-    }
+    // &:hover {
+    //     transform: scale(1.05);
+    //     transition: $transition;
+    // }
 
     &-bar {
         display: flex;
@@ -74,7 +77,8 @@
 
         &-img {
             object-fit: cover;
-            height: 13.5em;
+            // height: 13.5em;
+            // max-height: 15em;
             width: 100%;
             border-bottom-left-radius: $radius;
             border-bottom-right-radius: $radius;
@@ -84,7 +88,7 @@
     &-overlay {
         position: absolute;
         top: 0;
-        background-color: transparentize($bg, 0.1);
+        background-color: transparentize(darken($yellow, 50), 0.3);
         width: 100%;
         height: 100%;
         border-bottom-right-radius: $radius;
@@ -92,7 +96,7 @@
         opacity: 0;
         transition: $transition;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         padding: 0 $space-02;
@@ -101,21 +105,31 @@
             opacity: 1;
             transition: $transition;
         }
+
+        &-header {
+            font-size: $text-02;
+        }
+
+        &-header,
+        &-header-sub {
+            color: $yellow;
+        }
     }
 
-    &-tags {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
+    // &-tags {
+    //     display: flex;
+    //     // justify-content: center;
+    //     align-items: center;
+    //     flex-wrap: wrap;
+    // }
 
-    &-tag {
-        background: $yellow-2;
-        width: min-content;
-        border-radius: $radius;
-        padding: 5px 15px;
-        margin: $space-00;
-        text-transform: uppercase;
-    }
+    // &-tag {
+    //     background: $yellow-2;
+    //     width: min-content;
+    //     border-radius: $radius;
+    //     padding: 4px 8px;
+    //     margin: $space-00;
+    //     text-transform: uppercase;
+    //     font-size: $text-00;
+    // }
 }

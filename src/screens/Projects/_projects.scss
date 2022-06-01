@@ -12,17 +12,37 @@
         padding-top: $space-08;
     }
 
-    .shapes-bg {
+    .shapes-bg,
+    .shapes-bg-layer-2,
+    .shapes-bg-layer-3 {
         height: 100%;
         width: 100%;
         position: absolute;
         left: 0;
         z-index: 1;
-        opacity: .5;
+        filter: blur(4px);
+    }
+
+    .shapes-bg {
+        opacity: .4;
+    }
+
+    .shapes-bg-layer-2 {
+        transform: scaleX(-1);
+        opacity: .02;
+    }
+
+    .shapes-bg-layer-3 {
+        transform: scaleY(-1);
+        opacity: .08;
     }
     
     .front-section {
         position: relative;
         z-index: 3;
+    }
+
+    .project-container {
+        position: relative;
     }
 }

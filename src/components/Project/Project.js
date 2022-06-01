@@ -27,13 +27,8 @@ const Project = (props) => {
       <div className="project-content" onClick={() => window.open(props.project.link)}>
         <img src={props.project.img} alt={props.project.name} className="project-content-img" />
         <div className="project-overlay">
-          <div className="text-white font-primary">Click to visit page</div>
-          <div className="project-tags">
-            {props.project.tags.map((tag, i) => (
-              <div key={`${props.project.name.replace(/\s+/g, '')}-tag-${i}`} className="project-tag">{tag}</div>
-            ))}
-          </div>
-          {/* <div className="text-white">Click to visit Github page</div> */}
+          <div className="font-primary project-overlay-header">Click to visit page</div>
+          <div className="font-primary project-overlay-header-sub">(or click the github icon to see the code)</div>
         </div>
       </div>
     </div>
@@ -47,7 +42,7 @@ Project.propTypes = {
 
 Project.defaultProps = {
   className: "",
-  project: {name: 'PROJECT', img: instaplan, tags: ['tag'], link: 'https://insta-plan.herokuapp.com/', github: 'https://github.com/jordanmccollam/instaplan'},
+  project: {name: 'PROJECT', img: instaplan, tags: ['tag'], link: 'https://insta-plan.herokuapp.com/', github: 'https://github.com/jordanmccollam/instaplan', type: "Website", description: "This is an example description"},
 }
 
 export default Project;
