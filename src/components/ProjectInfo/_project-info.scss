@@ -7,6 +7,22 @@
     width: 86%;
     z-index: 2;
 
+    @media screen and (max-width: $laptop) {
+        // left: 0;
+        // right: 0;
+        // margin-left: auto;
+        // margin-right: auto;
+        // width: 88%;
+    }
+
+    @media screen and (max-width: $phone) {
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 88%;
+    }
+
     border-radius: $radius;
     background-color: rgba(darken($bg, 5), .9);
     display: flex;
