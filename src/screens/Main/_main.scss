@@ -6,37 +6,8 @@
     padding: $space-05;
     overflow: hidden;
 
-    .main-section {
-        position: relative;
-    }
 
-    .profile-image {
-        width: 42vw;
-        position: absolute;
-        bottom: 0;
-        right: -7em;
-        pointer-events: none;
-    }
-
-    .content {
-        padding-left: 1vw;
-        margin-top: 10vh;
-        font-size: $text-02;
-
-        &-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: $space-02;
-            height: 4em;
-            width: 4em;
-        }
-
-        &-image {
-            width: 3em;
-        }
-    }
-
+    // ACHIEVEMENTS ---
     .achievements {
         position: absolute;
         top: -3em;
@@ -61,19 +32,102 @@
             margin-bottom: $space-09;
         }
     }
+    // ----------------
 
+    &-header {
+        position: absolute;
+        width: 40vw;
+        top: -10em;
+        right: 0;
+        bottom: 0;
+        // left: -28em;
+        left: -31vw;
+        margin: auto;
+        z-index: 3;
+    }
+
+    .small-header {
+        width: 100%;
+    }
+
+
+    // ABOUT SECTION ----
     .about-section {
-        // background-color: $yellow-2;
-        background: linear-gradient($yellow, $yellow-2);
-        padding: 1em 0;
-        // margin-bottom: 2em;
-        position: relative;
+        position: absolute;
+        width: 42vw;
+        // height: 22.5em;
+        // min-height: 5em;
+        height: min-content;
+        display: flex;
+        justify-content: center;
+
+        top: 0;
+        right: -31vw;
+        bottom: -10em;
+        left: 0;
+        margin: auto;
+        z-index: 2;
+        
+        background-color: rgba(darken($bg, 5), .9);
+        border-radius: $radius;
+
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 3em;
+        padding-bottom: 3em;
+
+        @media screen and (max-width: $laptop) {
+            width: 90%;
+            position: relative;
+        }
+
+        .about-section-content {
+            width: 65%;
+            @media screen and (max-width: $laptop) {
+                width: 100%;
+            }
+        }
+
+        .about-header {
+            @media screen and (max-width: $desktop) {
+                font-size: 3em;
+            }
+        }
+
+        .about-profile-circle {
+            width: 15em;
+            position: absolute;
+            top: -2em;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+
+            @media screen and (max-width: $tablet) {
+                right: -6em;
+                margin-right: 0;
+            }
+
+        }
+
+        .bio {
+            // border: 1px solid red; // or testing
+            overflow: auto;
+            overflow-x: hidden;
+            border-top: 2px solid $bg;
+            margin-top: .2em;
+            padding-top: .2em;
+            height: 10em;
+        }
 
         .size-adjuster {
             position: absolute;
-            top: 0;
+            margin-right: auto;
+            margin-left: auto;
+            left: 0;
             right: 0;
-            padding-top: 1em;
+            bottom: .2;
         }
     }
+    // ---------------------
 }

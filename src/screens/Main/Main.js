@@ -11,6 +11,9 @@ import python from '../../assets/python.png';
 import unity from '../../assets/unity.png';
 import nt from '../../assets/nt_transparent.png';
 import { FaFilePdf, FaFileWord } from 'react-icons/fa';
+import profileCircle from '../../assets/profileCircle.png';
+import mainHeader from '../../assets/header.png';
+import rightHeader from '../../assets/header-r.png';
 
 import './_main.scss';
 
@@ -39,40 +42,69 @@ const Main = (props) => {
   }
 
   return (
-    <Container fluid className={`${props.className} ${classnames(classes)}`} id="about">
-      <div className="main-section">
-        <div className="full center-h">
-        {/* <div className="full center pb-5"> */}
-          <div className="flip-in-diag-2-br text-center mt-5 pt-5">
-            <Header color="yellow" size="lg">Jordan</Header>
-            <Header color="yellow" size="md" useBorder>McCollam</Header>
-            <Header color="yellow" size="sm" className="mt-2">Software Developer</Header>
-          </div>
-        </div>
+    <Container fluid className={`${props.className} ${classnames(classes)} center`} id="about">
+      <div className="d-none d-lg-block">
+        <img alt="header" className="main-header" src={mainHeader} />
+      
+        <div className="about-section">
+          <div className="about-section-content">
+            <Row>
+              <Col><Header size="sm" className="about-header" >ABOUT</Header></Col>
+              <Col className="d-flex justify-content-end">
+                <div className="size-adjuster">
+                  <div className="text-center font-primary">ADJUST SIZE OF BIO</div>
+                  <div className="d-flex justify-content-center align-items-center mt-1">
+                    <Button onClick={() => setBioSize("sm")} variant={`${bioSize == "sm" ? "light" : "outline-light"}`} size="sm" className="mr-2"></Button>
+                    <Button onClick={() => setBioSize("md")} variant={`${bioSize == "md" ? "light" : "outline-light"}`} size="md" className="mr-2"></Button>
+                    <Button onClick={() => setBioSize("lg")} variant={`${bioSize == "lg" ? "light" : "outline-light"}`} size="lg"></Button>
+                  </div>
+                </div>
+              </Col>
+            </Row>
 
-        {/* Achievements */}
-        <div className="achievements d-none d-lg-flex">
-          <div className="achievement-instructions">Check out my qualifications</div>
-          <div className="achievement-row"><Achievement pic={nt} description={`Jordan worked for Neurotargeting`} bigger /></div>
-          <div className="achievement-row"><Achievement pic={vandy} description="Jordan is certified by the Vanderbilt Full-stack Web Developer Course" /></div>
-          <div className="achievement-row"><Achievement pic={unity} description="Jordan makes games with unity and C#" nudgeLeft /></div>
-          <div className="achievement-row"><Achievement pic={aspnet} description="Jordan is certified by the Complete ASP.NET MVC 5 Course" biggerAndDown /></div>
-          {/* <div className="achievement-row"><Achievement pic={python} description="Jordan is learning Python from the Complete Python Bootcamp" /></div> */}
+            <div className="bio">
+              {RenderBio()}
+            </div>
+          </div>
         </div>
       </div>
 
-      <Container className="about-section px-5">
-        <Header color="white" size="sm" className="pb-3">ABOUT </Header>
-        <div className="size-adjuster pr-5 d-none d-md-block">
-          <div className="font-weight-bold">Adjust the size of Jordan's bio</div>
-          <div className="d-flex justify-content-center align-items-center mt-2">
-            <Button onClick={() => setBioSize("sm")} variant={`${bioSize == "sm" ? "light" : "outline-light"}`} size="sm" className="mr-2"></Button>
-            <Button onClick={() => setBioSize("md")} variant={`${bioSize == "md" ? "light" : "outline-light"}`} size="md" className="mr-2"></Button>
-            <Button onClick={() => setBioSize("lg")} variant={`${bioSize == "lg" ? "light" : "outline-light"}`} size="lg"></Button>
+      <Row className="d-block d-lg-none">
+        <Col xs={12} className="text-center" ><img alt="header" className="small-header" src={mainHeader} /></Col>
+        <Col xs={12} className="text-center" >
+          <div className="about-section mt-3">
+            <div className="about-section-content">
+              <Row>
+                <Col><Header size="sm" className="about-header text-left" >ABOUT</Header></Col>
+                <Col className="d-flex justify-content-end">
+                  <div className="size-adjuster">
+                    <div className="text-center font-primary">ADJUST SIZE OF BIO</div>
+                    <div className="d-flex justify-content-center align-items-center mt-1">
+                      <Button onClick={() => setBioSize("sm")} variant={`${bioSize == "sm" ? "light" : "outline-light"}`} size="sm" className="mr-2"></Button>
+                      <Button onClick={() => setBioSize("md")} variant={`${bioSize == "md" ? "light" : "outline-light"}`} size="md" className="mr-2"></Button>
+                      <Button onClick={() => setBioSize("lg")} variant={`${bioSize == "lg" ? "light" : "outline-light"}`} size="lg"></Button>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+
+              <div className="bio text-left">
+                {RenderBio()}
+              </div>
+            </div>
           </div>
-        </div>
-        <div>{RenderBio()}</div>
-      </Container>
+        </Col>
+      </Row>
+
+      {/* Achievements */}
+      <div className="achievements d-none d-lg-flex">
+        <div className="achievement-instructions">Check out my qualifications</div>
+        <div className="achievement-row"><Achievement pic={nt} description={`Jordan worked for Neurotargeting`} bigger /></div>
+        <div className="achievement-row"><Achievement pic={vandy} description="Jordan is certified by the Vanderbilt Full-stack Web Developer Course" /></div>
+        <div className="achievement-row"><Achievement pic={unity} description="Jordan makes games with unity and C#" nudgeLeft /></div>
+        <div className="achievement-row"><Achievement pic={aspnet} description="Jordan is certified by the Complete ASP.NET MVC 5 Course" biggerAndDown /></div>
+        {/* <div className="achievement-row"><Achievement pic={python} description="Jordan is learning Python from the Complete Python Bootcamp" /></div> */}
+      </div>
     </Container>
   )
 }
