@@ -14,21 +14,22 @@ import smartdiary from '../../assets/smartdiary.png';
 import billsnsheet from '../../assets/billsnsheet.png';
 import laserdefender from '../../assets/laserdefender.jpeg';
 import shapesBg from '../../assets/shapes.png';
+import emoball from '../../assets/emoball.png';
 
 import './_projects.scss';
 
 const logger = "Projects:: ";
 
 const projects = [
-  {
-    name: 'INSTAPLAN',
-    img: instaplan,
-    link: 'https://insta-plan.herokuapp.com/',
-    tags: ['react', 'mongodb', 'sass', 'node.js', 'auth0'],
-    github: 'https://github.com/jordanmccollam/instaplan',
-    type: "Game",
-    description: "This is an example description"
-  },
+  // {
+  //   name: 'INSTAPLAN',
+  //   img: instaplan,
+  //   link: 'https://insta-plan.herokuapp.com/',
+  //   tags: ['react', 'mongodb', 'sass', 'node.js', 'auth0'],
+  //   github: 'https://github.com/jordanmccollam/instaplan',
+  //   type: "Game",
+  //   description: "This is an example description"
+  // },
   {
     name: 'SMART DIARY',
     img: smartdiary,
@@ -36,7 +37,7 @@ const projects = [
     tags: ['react', 'mongodb', 'sass', 'node.js', 'auth0'],
     github: 'https://github.com/jordanmccollam/smartdiary',
     type: "Website",
-    description: "This is an example description"
+    description: "The Smart Diary acts as a virtual diary, but now with added smart features! Log your mood changes and the smart diary will present you with your average mood. This can be your mood for the year, or just this week!"
   },
   // {
   //   name: "BILLS N' SHEET",
@@ -52,6 +53,15 @@ const projects = [
   //   tags: ['unity', 'c#'],
   //   github: 'https://github.com/jordanmccollam/laserdefender'
   // },
+  {
+    name: 'EMOBALL',
+    img: emoball,
+    link: 'https://github.com/jordanmccollam/smartdiary',
+    tags: ['C#', 'Unity', 'Logic_Pro_X', 'Affinity_Designer'],
+    github: 'https://github.com/jordanmccollam/smartdiary',
+    type: "Game", 
+    description: 'A multiplayer game where you embody emotions and battle for control of the human psyche! Each emotion/character has a unique ability to aid you. Game developed, designed, animated, and scored by Jordan.'
+  }
 ]
 
 const Projects = (props) => {
