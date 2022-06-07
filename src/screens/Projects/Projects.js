@@ -51,7 +51,7 @@ const Projects = (props) => {
 
         <Row className="content justify-content-center front-section">
           {projects.map((project, i) => (
-            <Col md={6} lg={4} key={`project-${i}`} className="project-container">
+            <Col lg={4} key={`project-${i}`} className="project-container">
               <Project project={project} />
               <ProjectInfo project={project} />
             </Col>

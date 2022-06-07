@@ -34,7 +34,7 @@ const ProjectInfo = (props) => {
         )}
       </div>
 
-      <div className="project-tags">
+      <div className="project-tags d-none d-md-flex">
           <div className="info-sub-header font-primary" >{("Made With:").toUpperCase()} </div>
           {props.project.tags.map((tag, i) => (
             <div key={`${props.project.name.replace(/\s+/g, '')}-tag-${i}`} className="project-tag">{tag}</div>
