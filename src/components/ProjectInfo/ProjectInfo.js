@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from 'prop-types'
 import classnames from "classnames"
 import { Row, Col, Button } from 'react-bootstrap';
-import instaplan from '../../assets/instaplan.png';
+import instaplan from '../../assets/projects/instaplan.png';
 
 import './_project-info.scss';
 
@@ -28,9 +28,9 @@ const ProjectInfo = (props) => {
 
       <div className="buttons">
         {props.project.type.toLowerCase() == "website" ? (
-          <Button variant="warning" className="text-white font-primary" onClick={onVisitPage}>Visit Page</Button>
+          <Button variant="warning" className="text-white font-primary" onClick={onVisitPage} >Visit Page</Button>
         ) : (
-          <Button variant="warning" className="text-white font-primary">Download</Button>
+          <Button variant="warning" className="text-white font-primary" onClick={onVisitPage} >See Game</Button>
         )}
       </div>
 

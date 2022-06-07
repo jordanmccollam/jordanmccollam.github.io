@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import PropTypes from 'prop-types'
 import classnames from "classnames"
 import { Row, Col } from 'react-bootstrap';
-import achievementIcon from '../../assets/award.png';
-import chatBubble from '../../assets/chatBubble.png';
-import nt from '../../assets/nt_transparent.png';
+import achievementIcon from '../../assets/UI/award.png';
+import chatBubble from '../../assets/UI/chatBubble.png';
+import nt from '../../assets/qualification/nt_transparent.png';
 
 import './_achievement.scss';
 import { propTypes } from "react-bootstrap/esm/Image";

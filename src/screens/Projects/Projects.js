@@ -3,33 +3,16 @@ import PropTypes from 'prop-types'
 import classnames from "classnames"
 import { Container, Row, Col } from 'react-bootstrap'
 import { Card, Project, Header, ProjectInfo } from '../../components';
-import profile from '../../transparent.png';
-import moment from 'moment';
-import vandy from '../../assets/vandy.png';
-import aspnet from '../../assets/aspnet.png';
-import python from '../../assets/python.png';
 import { FaFilePdf, FaFileWord } from 'react-icons/fa';
-import instaplan from '../../assets/instaplan.png';
-import smartdiary from '../../assets/smartdiary.png';
-import billsnsheet from '../../assets/billsnsheet.png';
-import laserdefender from '../../assets/laserdefender.jpeg';
-import shapesBg from '../../assets/shapes.png';
-import emoball from '../../assets/emoball.png';
+import shapesBg from '../../assets/UI/shapes.png';
+import smartdiary from '../../assets/projects/smartdiary.png';
+import emoball from '../../assets/projects/emoball.png';
 
 import './_projects.scss';
 
 const logger = "Projects:: ";
 
 const projects = [
-  // {
-  //   name: 'INSTAPLAN',
-  //   img: instaplan,
-  //   link: 'https://insta-plan.herokuapp.com/',
-  //   tags: ['react', 'mongodb', 'sass', 'node.js', 'auth0'],
-  //   github: 'https://github.com/jordanmccollam/instaplan',
-  //   type: "Game",
-  //   description: "This is an example description"
-  // },
   {
     name: 'SMART DIARY',
     img: smartdiary,
@@ -39,26 +22,12 @@ const projects = [
     type: "Website",
     description: "The Smart Diary acts as a virtual diary, but now with added smart features! Log your mood changes and the smart diary will present you with your average mood. This can be your mood for the year, or just this week!"
   },
-  // {
-  //   name: "BILLS N' SHEET",
-  //   img: billsnsheet,
-  //   link: 'https://billsnsheet.herokuapp.com/',
-  //   tags: ['react', 'mongodb', 'mongoose', 'sass', 'node.js', 'express.js', 'auth0'],
-  //   github: 'https://github.com/jordanmccollam/financial-planner'
-  // },
-  // {
-  //   name: "LASER DEFENDER",
-  //   img: laserdefender,
-  //   link: 'https://jordanmccollam.github.io/laserdefender/',
-  //   tags: ['unity', 'c#'],
-  //   github: 'https://github.com/jordanmccollam/laserdefender'
-  // },
   {
     name: 'EMOBALL',
     img: emoball,
-    link: 'https://github.com/jordanmccollam/smartdiary',
+    link: 'https://youtu.be/ttlYU7xV-eA',
     tags: ['C#', 'Unity', 'Logic_Pro_X', 'Affinity_Designer'],
-    github: 'https://github.com/jordanmccollam/smartdiary',
+    github: 'https://github.com/jordanmccollam',
     type: "Game", 
     description: 'A multiplayer game where you embody emotions and battle for control of the human psyche! Each emotion/character has a unique ability to aid you. Game developed, designed, animated, and scored by Jordan.'
   }
@@ -78,7 +47,7 @@ const Projects = (props) => {
       </div>
       <Container className="h-100" fluid>
         {/* <h1 className="tracking-in-expand text-alt">PROJECTS</h1> */}
-        <Header color="yellow" size="md" className="pt-5">PROJECTS</Header>
+        <Header color="yellow" size="md" className="pt-5 mb-5">PROJECTS</Header>
 
         <Row className="content justify-content-center front-section">
           {projects.map((project, i) => (

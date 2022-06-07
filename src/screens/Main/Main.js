@@ -3,17 +3,9 @@ import PropTypes from 'prop-types'
 import classnames from "classnames"
 import { Container, Row, Col, OverlayTrigger, Tooltip, Button } from 'react-bootstrap'
 import { Card, Header, Achievement } from '../../components';
-import profile from '../../transparent.png';
-import moment from 'moment';
-import vandy from '../../assets/vandy.png';
-import aspnet from '../../assets/aspnet.png';
-import python from '../../assets/python.png';
-import unity from '../../assets/unity.png';
-import nt from '../../assets/nt_transparent.png';
 import { FaFilePdf, FaFileWord } from 'react-icons/fa';
-import profileCircle from '../../assets/profileCircle.png';
-import mainHeader from '../../assets/header.png';
-import rightHeader from '../../assets/header-r.png';
+import mainHeader from '../../assets/UI/header.png';
+import { nt, vandy, unity, aspnet } from '../../assets/qualification';
 
 import './_main.scss';
 
@@ -103,7 +95,6 @@ const Main = (props) => {
         <div className="achievement-row"><Achievement pic={vandy} description="Jordan is certified by the Vanderbilt Full-stack Web Developer Course" /></div>
         <div className="achievement-row"><Achievement pic={unity} description="Jordan makes games with unity and C#" nudgeLeft /></div>
         <div className="achievement-row"><Achievement pic={aspnet} description="Jordan is certified by the Complete ASP.NET MVC 5 Course" biggerAndDown /></div>
-        {/* <div className="achievement-row"><Achievement pic={python} description="Jordan is learning Python from the Complete Python Bootcamp" /></div> */}
       </div>
     </Container>
   )

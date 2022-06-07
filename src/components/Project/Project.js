@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from 'prop-types'
 import classnames from "classnames"
 import { Row, Col } from 'react-bootstrap';
-import instaplan from '../../assets/instaplan.png';
+import instaplan from '../../assets/projects/instaplan.png';
 import { FaGithub } from 'react-icons/fa';
 
 import './_project.scss';
@@ -27,8 +27,10 @@ const Project = (props) => {
       <div className="project-content" onClick={() => window.open(props.project.link)}>
         <img src={props.project.img} alt={props.project.name} className="project-content-img" />
         <div className="project-overlay">
-          <div className="font-primary project-overlay-header">Click to visit page</div>
-          <div className="font-primary project-overlay-header-sub">(or click the github icon to see the code)</div>
+          <div className="font-primary project-overlay-header">{props.project.type.toLowerCase() == "website" ? "Click to visit page" : "Click to see game"}</div>
+          <div className="font-primary project-overlay-header-sub">
+            {props.project.type.toLowerCase() == "website" ? "(or click the github icon to see the code)" : "(To-be-released via Steam, so Github is private)"}
+          </div>
         </div>
       </div>
     </div>

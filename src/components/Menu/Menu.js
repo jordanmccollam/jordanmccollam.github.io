@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import PropTypes from 'prop-types'
 import classnames from "classnames"
 import { Row, Col } from 'react-bootstrap';
-import logo1 from '../../logo-mono.png';
-import logo2 from '../../assets/logo-2.png';
-import logo3 from '../../assets/logo-3.png';
-import profileCircle from '../../assets/circleNoShadow.png';
+import logo1 from '../../assets/UI/logo-mono.png';
+import logo2 from '../../assets/UI/logo-2.png';
+import logo3 from '../../assets/UI/logo-3.png';
+import profileCircle from '../../assets/UI/circleNoShadow.png';
 import { FaUserCircle, FaGithub, FaProjectDiagram, FaLinkedinIn } from 'react-icons/fa';
 import { MdMail } from 'react-icons/md';
 
