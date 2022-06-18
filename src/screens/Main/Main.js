@@ -23,7 +23,7 @@ const Main = (props) => {
         return "Jordan McCollam is a software developer and a cool guy!";
         break;
       case "md":
-        return "Jordan McCollam is an an inspired software developer. Jordan was certified by Vanderbilt's Full-stack Coding Bootcamp and gained professional experience working for Neurotargeting. There, he developed information-heavy interfaces for medical use. Jordan's pride and joy is developing video games in his free time.";
+        return "Jordan McCollam is an inspired software developer. Jordan was certified by Vanderbilt's Full-stack Coding Bootcamp and gained professional experience working for Neurotargeting. There, he developed information-heavy interfaces for medical use. Jordan's pride and joy is developing video games in his free time.";
         break;
       case "lg":
         return "Jordan McCollam is an inspired software developer with a love for problem solving and tech. Jordan first learned problem solving skills from a previous career as an Audio Engineer. Then completed and was certified by the Vanderbilt Full-stack Coding Bootcamp among other various courses. Finally gained experience working for Neurotargeting, developing information-heavy interfaces for medical use. Jordan's pride and joy is developing video games in his free time.";
