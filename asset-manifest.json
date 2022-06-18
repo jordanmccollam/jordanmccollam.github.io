@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.219d4597.chunk.css",
-    "main.js": "/static/js/main.a24bd011.chunk.js",
-    "main.js.map": "/static/js/main.a24bd011.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2947d4c6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2947d4c6.js.map",
-    "static/js/2.05688bf7.chunk.js": "/static/js/2.05688bf7.chunk.js",
-    "static/js/2.05688bf7.chunk.js.map": "/static/js/2.05688bf7.chunk.js.map",
-    "static/js/3.0ddfe559.chunk.js": "/static/js/3.0ddfe559.chunk.js",
-    "static/js/3.0ddfe559.chunk.js.map": "/static/js/3.0ddfe559.chunk.js.map",
+    "main.css": "/static/css/main.aeedf8ab.chunk.css",
+    "main.js": "/static/js/main.abb965f3.chunk.js",
+    "main.js.map": "/static/js/main.abb965f3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7ab6df8a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7ab6df8a.js.map",
+    "static/js/2.3f4f94c1.chunk.js": "/static/js/2.3f4f94c1.chunk.js",
+    "static/js/2.3f4f94c1.chunk.js.map": "/static/js/2.3f4f94c1.chunk.js.map",
+    "static/js/3.a45b7466.chunk.js": "/static/js/3.a45b7466.chunk.js",
+    "static/js/3.a45b7466.chunk.js.map": "/static/js/3.a45b7466.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.219d4597.chunk.css.map": "/static/css/main.219d4597.chunk.css.map",
-    "static/js/2.05688bf7.chunk.js.LICENSE.txt": "/static/js/2.05688bf7.chunk.js.LICENSE.txt",
+    "static/css/main.aeedf8ab.chunk.css.map": "/static/css/main.aeedf8ab.chunk.css.map",
+    "static/js/2.3f4f94c1.chunk.js.LICENSE.txt": "/static/js/2.3f4f94c1.chunk.js.LICENSE.txt",
+    "static/media/2022_JordanMcCollam_Resume.75656347.pdf": "/static/media/2022_JordanMcCollam_Resume.75656347.pdf",
+    "static/media/2022_JordanMcCollam_Resume.a83991e7.docx": "/static/media/2022_JordanMcCollam_Resume.a83991e7.docx",
     "static/media/aspnet.9e59ffd1.png": "/static/media/aspnet.9e59ffd1.png",
     "static/media/award.c03e2d1a.png": "/static/media/award.c03e2d1a.png",
     "static/media/chatBubble.95358185.png": "/static/media/chatBubble.95358185.png",
@@ -27,9 +29,9 @@
     "static/media/vandy.3d8ca556.png": "/static/media/vandy.3d8ca556.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2947d4c6.js",
-    "static/js/2.05688bf7.chunk.js",
-    "static/css/main.219d4597.chunk.css",
-    "static/js/main.a24bd011.chunk.js"
+    "static/js/runtime-main.7ab6df8a.js",
+    "static/js/2.3f4f94c1.chunk.js",
+    "static/css/main.aeedf8ab.chunk.css",
+    "static/js/main.abb965f3.chunk.js"
   ]
 }
