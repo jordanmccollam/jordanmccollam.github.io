@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from 'prop-types'
 import classnames from "classnames"
-import { Container, Row, Col, OverlayTrigger, Tooltip, Button } from 'react-bootstrap'
+import { Container, Row, Col, OverlayTrigger, Tooltip, Button, DropdownButton, Dropdown } from 'react-bootstrap'
 import { Card, Header, Achievement } from '../../components';
 import { FaFilePdf, FaFileWord } from 'react-icons/fa';
 import mainHeader from '../../assets/UI/header.png';
 import { nt, vandy, unity, aspnet } from '../../assets/qualification';
+import resume from '../../assets/resumes/2022_JordanMcCollam_Resume.docx';
+import doc from '../../assets/resumes/2022_JordanMcCollam_Resume.docx';
+import pdf from '../../assets/resumes/2022_JordanMcCollam_Resume.pdf';
 
 import './_main.scss';
 
@@ -56,6 +59,19 @@ const Main = (props) => {
 
             <div className="bio">
               {RenderBio()}
+            </div>
+            <div className="text-center">
+              <DropdownButton
+                variant="warning"
+                title="Download Resume"
+                id="dropdown-resumes"
+                className="mt-3"
+              >
+                <Dropdown.Item href={doc} download>Resume.docx</Dropdown.Item>
+                <Dropdown.Divider />
+                <Dropdown.Item href={pdf} download>Resume.pdf</Dropdown.Item>
+              </DropdownButton>
+              {/* <a className="mt-3 font-primary text-light btn btn-warning" href={resume} download >Download Resume</a> */}
             </div>
           </div>
         </div>
