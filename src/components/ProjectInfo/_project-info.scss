@@ -23,13 +23,15 @@
         width: 88%;
     }
 
-    border-radius: $radius;
-    background-color: rgba(darken($bg, 5), .9);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: $space-04;
-    padding-bottom: $space-04;
+    .project-bg {    
+        border-radius: $radius;
+        background-color: rgba(darken($bg, 5), .9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: $space-04;
+        padding-bottom: $space-04;
+    }
 
     .info {
         width: 100%;
@@ -55,8 +57,9 @@
         display: flex;
         flex-wrap: wrap;
         // justify-content: left;
-        position: absolute;
-        bottom: -2em;
+        // position: absolute;
+        // bottom: -2em;
+        margin-top: $space-00;
     }
 
     .project-tag {

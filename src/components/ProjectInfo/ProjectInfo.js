@@ -19,19 +19,21 @@ const ProjectInfo = (props) => {
 
   return (
     <div className={`${props.className} ${classnames(classes)}`}>
-      {props.children}
+      <div className="project-bg">
+        {props.children}
 
-      <div className="info">
-        <h6>{props.project.type.toUpperCase()}</h6>
-        {props.project.description}
-      </div>
+        <div className="info">
+          <h6>{props.project.type.toUpperCase()}</h6>
+          {props.project.description}
+        </div>
 
-      <div className="buttons">
-        {props.project.type.toLowerCase() == "website" ? (
-          <Button variant="warning" className="text-white font-primary" onClick={onVisitPage} >Visit Page</Button>
-        ) : (
-          <Button variant="warning" className="text-white font-primary" onClick={onVisitPage} >See Game</Button>
-        )}
+        <div className="buttons">
+          {props.project.type.toLowerCase() == "website" ? (
+            <Button variant="warning" className="text-white font-primary" onClick={onVisitPage} >Visit Page</Button>
+          ) : (
+            <Button variant="warning" className="text-white font-primary" onClick={onVisitPage} >See Game</Button>
+          )}
+        </div>
       </div>
 
       <div className="project-tags d-none d-md-flex">

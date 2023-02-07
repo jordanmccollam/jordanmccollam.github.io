@@ -7,26 +7,36 @@ import { FaFilePdf, FaFileWord } from 'react-icons/fa';
 import shapesBg from '../../assets/UI/shapes.png';
 import smartdiary from '../../assets/projects/smartdiary.png';
 import emoball from '../../assets/projects/emoball.png';
+import billsnsheet from '../../assets/projects/billsnsheet.png'
 
 import './_projects.scss';
 
 const logger = "Projects:: ";
 
 const projects = [
+  // {
+  //   name: 'SMART DIARY',
+  //   img: smartdiary,
+  //   link: 'https://smart-diary.herokuapp.com/',
+  //   tags: ['react', 'mongodb', 'sass', 'node.js', 'auth0'],
+  //   github: 'https://github.com/jordanmccollam/smartdiary',
+  //   type: "Website",
+  //   description: "The Smart Diary acts as a virtual diary, but now with added smart features! Log your mood changes and the smart diary will present you with your average mood. This can be your mood for the year, or just this week!"
+  // },
   {
-    name: 'SMART DIARY',
-    img: smartdiary,
-    link: 'https://smart-diary.herokuapp.com/',
-    tags: ['react', 'mongodb', 'sass', 'node.js', 'auth0'],
-    github: 'https://github.com/jordanmccollam/smartdiary',
+    name: `BILLS N' SHEET`,
+    img: billsnsheet,
+    link:'https://billsnsheet.up.railway.app/',
+    tags: ['React', 'Sass', 'Javascript', 'Express.js', 'Mongoose', 'MongoDB', 'Auth0', 'Node'],
+    github: 'https://github.com/jordanmccollam/BillsNSheet',
     type: "Website",
-    description: "The Smart Diary acts as a virtual diary, but now with added smart features! Log your mood changes and the smart diary will present you with your average mood. This can be your mood for the year, or just this week!"
+    description: "A simple but useful site to track your finances without linking any bank accounts. The idea is to know how much money is free to spend after all of your bills have been taken care of. This app also showcases Jordan's design skills and familiarity with React."
   },
   {
     name: 'EMOBALL',
     img: emoball,
     link: 'https://youtu.be/ttlYU7xV-eA',
-    tags: ['C#', 'Unity', 'Logic_Pro_X', 'Affinity_Designer'],
+    tags: ['C#', 'Unity_Game_Engine', 'Logic_Pro_X', 'Affinity_Designer'],
     github: 'https://github.com/jordanmccollam',
     type: "Game", 
     description: 'A multiplayer game where you embody emotions and battle for control of the human psyche! Each emotion/character has a unique ability to aid you. Game developed, designed, animated, and scored by Jordan.'
