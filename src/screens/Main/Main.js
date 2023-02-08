@@ -7,8 +7,8 @@ import { FaFilePdf, FaFileWord } from 'react-icons/fa';
 import mainHeader from '../../assets/UI/header.png';
 import { nt, vandy, unity, aspnet } from '../../assets/qualification';
 import resume from '../../assets/resumes/2022_JordanMcCollam_Resume.docx';
-import doc from '../../assets/resumes/2022_JordanMcCollam_Resume.docx';
-import pdf from '../../assets/resumes/2022_JordanMcCollam_Resume.pdf';
+import doc from '../../assets/resumes/mccollam_resume.docx';
+import pdf from '../../assets/resumes/mccollam_resume.pdf';
 
 import './_main.scss';
 
