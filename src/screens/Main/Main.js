@@ -36,84 +36,91 @@ const Main = (props) => {
     }
   }
 
+
   return (
-    <Container fluid className={`${props.className} ${classnames(classes)} center`} id="about">
-      <div className="d-none d-lg-block">
-        <img alt="header" className="main-header" src={mainHeader} />
+    <Container fluid className={`${props.className} ${classnames(classes)} center`} id="main">
       
-        <div className="about-section">
-          <div className="about-section-content">
-            <Row>
-              <Col><Header size="sm" className="about-header" >ABOUT</Header></Col>
-              <Col className="d-flex justify-content-end">
-                <div className="size-adjuster">
-                  <div className="text-center font-primary">ADJUST SIZE OF BIO</div>
-                  <div className="d-flex justify-content-center align-items-center mt-1">
-                    <Button onClick={() => setBioSize("sm")} variant={`${bioSize == "sm" ? "light" : "outline-light"}`} size="sm" className="mr-2"></Button>
-                    <Button onClick={() => setBioSize("md")} variant={`${bioSize == "md" ? "light" : "outline-light"}`} size="md" className="mr-2"></Button>
-                    <Button onClick={() => setBioSize("lg")} variant={`${bioSize == "lg" ? "light" : "outline-light"}`} size="lg"></Button>
-                  </div>
-                </div>
-              </Col>
-            </Row>
-
-            <div className="bio">
-              {RenderBio()}
-            </div>
-            <div className="text-center">
-              <DropdownButton
-                variant="warning"
-                title="Download Resume"
-                id="dropdown-resumes"
-                className="mt-3"
-              >
-                <Dropdown.Item href={doc} download>Resume.docx</Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Item href={pdf} download>Resume.pdf</Dropdown.Item>
-              </DropdownButton>
-              {/* <a className="mt-3 font-primary text-light btn btn-warning" href={resume} download >Download Resume</a> */}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <Row className="d-block d-lg-none">
-        <Col xs={12} className="text-center" ><img alt="header" className="small-header" src={mainHeader} /></Col>
-        <Col xs={12} className="text-center" >
-          <div className="about-section mt-3">
-            <div className="about-section-content">
-              <Row>
-                <Col><Header size="sm" className="about-header text-left" >ABOUT</Header></Col>
-                <Col className="d-flex justify-content-end">
-                  <div className="size-adjuster">
-                    <div className="text-center font-primary">ADJUST SIZE OF BIO</div>
-                    <div className="d-flex justify-content-center align-items-center mt-1">
-                      <Button onClick={() => setBioSize("sm")} variant={`${bioSize == "sm" ? "light" : "outline-light"}`} size="sm" className="mr-2"></Button>
-                      <Button onClick={() => setBioSize("md")} variant={`${bioSize == "md" ? "light" : "outline-light"}`} size="md" className="mr-2"></Button>
-                      <Button onClick={() => setBioSize("lg")} variant={`${bioSize == "lg" ? "light" : "outline-light"}`} size="lg"></Button>
-                    </div>
-                  </div>
-                </Col>
-              </Row>
-
-              <div className="bio text-left">
-                {RenderBio()}
-              </div>
-            </div>
-          </div>
-        </Col>
-      </Row>
-
-      {/* Achievements */}
-      <div className="achievements d-none d-lg-flex">
-        <div className="achievement-instructions">Check out my qualifications</div>
-        <div className="achievement-row"><Achievement pic={nt} description={`Jordan worked for Neurotargeting`} bigger /></div>
-        <div className="achievement-row"><Achievement pic={vandy} description="Jordan is certified by the Vanderbilt Full-stack Web Developer Course" /></div>
-        <div className="achievement-row"><Achievement pic={unity} description="Jordan makes games with unity and C#" nudgeLeft /></div>
-        <div className="achievement-row"><Achievement pic={aspnet} description="Jordan is certified by the Complete ASP.NET MVC 5 Course" biggerAndDown /></div>
-      </div>
     </Container>
   )
+
+  // return (
+  //   <Container fluid className={`${props.className} ${classnames(classes)} center`} id="about">
+  //     <div className="d-none d-lg-block">
+  //       <img alt="header" className="main-header" src={mainHeader} />
+      
+  //       <div className="about-section">
+  //         <div className="about-section-content">
+  //           <Row>
+  //             <Col><Header size="sm" className="about-header" >ABOUT</Header></Col>
+  //             <Col className="d-flex justify-content-end">
+  //               <div className="size-adjuster">
+  //                 <div className="text-center font-primary">ADJUST SIZE OF BIO</div>
+  //                 <div className="d-flex justify-content-center align-items-center mt-1">
+  //                   <Button onClick={() => setBioSize("sm")} variant={`${bioSize == "sm" ? "light" : "outline-light"}`} size="sm" className="mr-2"></Button>
+  //                   <Button onClick={() => setBioSize("md")} variant={`${bioSize == "md" ? "light" : "outline-light"}`} size="md" className="mr-2"></Button>
+  //                   <Button onClick={() => setBioSize("lg")} variant={`${bioSize == "lg" ? "light" : "outline-light"}`} size="lg"></Button>
+  //                 </div>
+  //               </div>
+  //             </Col>
+  //           </Row>
+
+  //           <div className="bio">
+  //             {RenderBio()}
+  //           </div>
+  //           <div className="text-center">
+  //             <DropdownButton
+  //               variant="warning"
+  //               title="Download Resume"
+  //               id="dropdown-resumes"
+  //               className="mt-3"
+  //             >
+  //               <Dropdown.Item href={doc} download>Resume.docx</Dropdown.Item>
+  //               <Dropdown.Divider />
+  //               <Dropdown.Item href={pdf} download>Resume.pdf</Dropdown.Item>
+  //             </DropdownButton>
+  //             {/* <a className="mt-3 font-primary text-light btn btn-warning" href={resume} download >Download Resume</a> */}
+  //           </div>
+  //         </div>
+  //       </div>
+  //     </div>
+
+  //     <Row className="d-block d-lg-none">
+  //       <Col xs={12} className="text-center" ><img alt="header" className="small-header" src={mainHeader} /></Col>
+  //       <Col xs={12} className="text-center" >
+  //         <div className="about-section mt-3">
+  //           <div className="about-section-content">
+  //             <Row>
+  //               <Col><Header size="sm" className="about-header text-left" >ABOUT</Header></Col>
+  //               <Col className="d-flex justify-content-end">
+  //                 <div className="size-adjuster">
+  //                   <div className="text-center font-primary">ADJUST SIZE OF BIO</div>
+  //                   <div className="d-flex justify-content-center align-items-center mt-1">
+  //                     <Button onClick={() => setBioSize("sm")} variant={`${bioSize == "sm" ? "light" : "outline-light"}`} size="sm" className="mr-2"></Button>
+  //                     <Button onClick={() => setBioSize("md")} variant={`${bioSize == "md" ? "light" : "outline-light"}`} size="md" className="mr-2"></Button>
+  //                     <Button onClick={() => setBioSize("lg")} variant={`${bioSize == "lg" ? "light" : "outline-light"}`} size="lg"></Button>
+  //                   </div>
+  //                 </div>
+  //               </Col>
+  //             </Row>
+
+  //             <div className="bio text-left">
+  //               {RenderBio()}
+  //             </div>
+  //           </div>
+  //         </div>
+  //       </Col>
+  //     </Row>
+
+  //     {/* Achievements */}
+  //     <div className="achievements d-none d-lg-flex">
+  //       <div className="achievement-instructions">Check out my qualifications</div>
+  //       <div className="achievement-row"><Achievement pic={nt} description={`Jordan worked for Neurotargeting`} bigger /></div>
+  //       <div className="achievement-row"><Achievement pic={vandy} description="Jordan is certified by the Vanderbilt Full-stack Web Developer Course" /></div>
+  //       <div className="achievement-row"><Achievement pic={unity} description="Jordan makes games with unity and C#" nudgeLeft /></div>
+  //       <div className="achievement-row"><Achievement pic={aspnet} description="Jordan is certified by the Complete ASP.NET MVC 5 Course" biggerAndDown /></div>
+  //     </div>
+  //   </Container>
+  // )
 }
 
 Main.propTypes = {
