@@ -11,6 +11,7 @@
         font-weight: bold;
         font-size: 3.8em;
         cursor: default;
+        transition: $transition;
     }
 
     &-links {
@@ -60,137 +61,190 @@
         }
     }
 
-    // // LINKEDIN LV2
-    // &-level-2,
-    // &-level-3,
-    // &-level-4,
-    // &-level-5,
-    // &-level-6 {
-    //     .menu-link:nth-child(6) {
-    //         background-color: $bg;
-    //         path,
-    //         .menu-link-name {
-    //             color: $yellow-2;
-    //         }
-    //     }
-    // }
-    // // GITHUB LV2
-    // &-level-3,
-    // &-level-4,
-    // &-level-5,
-    // &-level-6,
-    // &-level-7 {
-    //     .menu-link:nth-child(5) {
-    //         background-color: $bg;
-    //         path,
-    //         .menu-link-name {
-    //             color: $yellow-2;
-    //         }
-    //     }
-    // }
-    // // CONTACT LV2
-    // &-level-4,
-    // &-level-5,
-    // &-level-6,
-    // &-level-7,
-    // &-level-8 {
-    //     .menu-link:nth-child(4) {
-    //         background-color: $bg;
-    //         path,
-    //         .menu-link-name {
-    //             color: $yellow-2;
-    //         }
-    //     }
-    // }
-    // // PROJECTS LV2
-    // &-level-5,
-    // &-level-6,
-    // &-level-7,
-    // &-level-8,
-    // &-level-9 {
-    //     .menu-link:nth-child(3) {
-    //         background-color: $bg;
-    //         path,
-    //         .menu-link-name {
-    //             color: $yellow-2;
-    //         }
-    //     }
-    // }
-    // // ABOUT LV2
-    // &-level-6,
-    // &-level-7,
-    // &-level-8,
-    // &-level-9,
-    // &-level-10 {
-    //     .menu-link:nth-child(2) {
-    //         background-color: $bg;
-    //         path,
-    //         .menu-link-name {
-    //             color: $yellow-2;
-    //         }
-    //     }
-    // }
-    
-    // // LINKEDIN LV3
-    // &-level-7,
-    // &-level-8,
-    // &-level-9,
-    // &-level-10,
-    // &-level-11 {
-    //     .menu-link:nth-child(6) {
-    //         background-color: $yellow-2;
-    //         path,
-    //         .menu-link-name {
-    //             color: $yellow;
-    //         }
-    //     }
-    // }
-    // // GITHUB LV3
-    // &-level-8,
-    // &-level-9,
-    // &-level-10,
-    // &-level-11 {
-    //     .menu-link:nth-child(5) {
-    //         background-color: $yellow-2;
-    //         path,
-    //         .menu-link-name {
-    //             color: $yellow;
-    //         }
-    //     }
-    // }
-    // // CONTACT LV3
-    // &-level-9,
-    // &-level-10,
-    // &-level-11 {
-    //     .menu-link:nth-child(4) {
-    //         background-color: $yellow-2;
-    //         path,
-    //         .menu-link-name {
-    //             color: $yellow;
-    //         }
-    //     }
-    // }
-    // // PROJECTS LV3
-    // &-level-10,
-    // &-level-11 {
-    //     .menu-link:nth-child(3) {
-    //         background-color: $yellow-2;
-    //         path,
-    //         .menu-link-name {
-    //             color: $yellow;
-    //         }
-    //     }
-    // }
-    // // ABOUT LV3
-    // &-level-11 {
-    //     .menu-link:nth-child(2) {
-    //         background-color: $yellow-2;
-    //         path,
-    //         .menu-link-name {
-    //             color: $yellow;
-    //         }
-    //     }
-    // }
+
+    // LEVELs 1-7 are project page effects / SCROLLING ANIMATION FX
+    // LINKEDIN - PROJECT PG
+    &-level-2,
+    &-level-3,
+    &-level-4,
+    &-level-5,
+    &-level-6,
+    &-level-7,
+    &-level-8,
+    &-level-9,
+    &-level-10,
+    &-level-11,
+    &-level-12,
+    &-level-13 {
+        .menu-link:nth-child(6) {
+            background-color: $bg;
+            path,
+            .menu-link-name {
+                color: $yellow-2;
+            }
+        }
+    }
+    // GITHUB - PROJECT PG
+    &-level-3,
+    &-level-4,
+    &-level-5,
+    &-level-6,
+    &-level-7,
+    &-level-8,
+    &-level-9,
+    &-level-10,
+    &-level-11,
+    &-level-12,
+    &-level-13 {
+        .menu-link:nth-child(5) {
+            background-color: $bg;
+            path,
+            .menu-link-name {
+                color: $yellow-2;
+            }
+        }
+    }
+    // CONTACT - PROJECT PG
+    &-level-4,
+    &-level-5,
+    &-level-6,
+    &-level-7,
+    &-level-8,
+    &-level-9,
+    &-level-10,
+    &-level-11,
+    &-level-12,
+    &-level-13 {
+        .menu-link:nth-child(4) {
+            background-color: $bg;
+            path,
+            .menu-link-name {
+                color: $yellow-2;
+            }
+        }
+    }
+    // PROJECTS - PROJECT PG
+    &-level-5,
+    &-level-6,
+    &-level-7,
+    &-level-8,
+    &-level-9,
+    &-level-10,
+    &-level-11,
+    &-level-12,
+    &-level-13 {
+        .menu-link:nth-child(3) {
+            background-color: $bg;
+            path,
+            .menu-link-name {
+                color: $yellow-2;
+            }
+        }
+    }
+    // ABOUT - PROJECT PG
+    &-level-6,
+    &-level-7,
+    &-level-8,
+    &-level-9,
+    &-level-10,
+    &-level-11,
+    &-level-12,
+    &-level-13 {
+        .menu-link:nth-child(2) {
+            background-color: $bg;
+            path,
+            .menu-link-name {
+                color: $yellow-2;
+            }
+        }
+    }
+    // LOGO - PROJECT PG
+    &-level-7,
+    &-level-8,
+    &-level-9,
+    &-level-10,
+    &-level-11,
+    &-level-12,
+    &-level-13 {
+        .menu-logo {
+            color: $bg;
+        }
+    }
+
+
+
+    // NEXT PHASE -> CONTACT PAGE
+    // LINKED IN - CONTACT PG
+    &-level-8,
+    &-level-9,
+    &-level-10,
+    &-level-11,
+    &-level-12,
+    &-level-13 {
+        .menu-link:nth-child(6) {
+            background-color: $yellow;
+            path,
+            .menu-link-name {
+                color: $bg;
+            }
+        }
+    }
+    // GITHUB - CONTACT PG
+    &-level-9,
+    &-level-10,
+    &-level-11,
+    &-level-12,
+    &-level-13 {
+        .menu-link:nth-child(5) {
+            background-color: $yellow;
+            path,
+            .menu-link-name {
+                color: $bg;
+            }
+        }
+    }
+    // CONTACT - CONTACT PG
+    &-level-10,
+    &-level-11,
+    &-level-12,
+    &-level-13 {
+        .menu-link:nth-child(4) {
+            background-color: $yellow;
+            path,
+            .menu-link-name {
+                color: $bg;
+            }
+        }
+    }
+    // PROJECTS - CONTACT PG
+    &-level-11,
+    &-level-12,
+    &-level-13 {
+        .menu-link:nth-child(3) {
+            background-color: $yellow;
+            path,
+            .menu-link-name {
+                color: $bg;
+            }
+        }
+    }
+    // ABOUT - CONTACT PG
+    &-level-12,
+    &-level-13 {
+        .menu-link:nth-child(2) {
+            background-color: $yellow;
+            path,
+            .menu-link-name {
+                color: $bg;
+            }
+        }
+    }
+    // LOGO - CONTACT PG
+    &-level-13 {
+        .menu-logo {
+            color: $yellow;
+        }
+    }
 }
 
 .menu-link:nth-child(1) {

@@ -29,15 +29,15 @@ const ProjectInfo = (props) => {
 
         <div className="buttons">
           {props.project.type.toLowerCase() == "website" ? (
-            <Button variant="warning" className="text-white font-primary" onClick={onVisitPage} >Visit Page</Button>
+            <Button variant="warning" className="font-primary prj-info-btn" onClick={onVisitPage} >Visit Page</Button>
           ) : (
-            <Button variant="warning" className="text-white font-primary" onClick={onVisitPage} >See Game</Button>
+            <Button variant="warning" className="font-primary prj-info-btn" onClick={onVisitPage} >See Game</Button>
           )}
         </div>
       </div>
 
       <div className="project-tags d-none d-md-flex">
-          <div className="info-sub-header font-primary" >{("Made With:").toUpperCase()} </div>
+          <div className="info-sub-header" >{("Made With:").toUpperCase()} </div>
           {props.project.tags.map((tag, i) => (
             <div key={`${props.project.name.replace(/\s+/g, '')}-tag-${i}`} className="project-tag">{tag}</div>
           ))}

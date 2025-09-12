@@ -28,9 +28,9 @@ const Project = (props) => {
         <img src={props.project.img} alt={props.project.name} className="project-content-img" />
         <div className="project-overlay">
           <div className="font-primary project-overlay-header">{props.project.type.toLowerCase() == "website" ? "Click to visit page" : "Click to see game"}</div>
-          <div className="font-primary project-overlay-header-sub">
+          {/* <div className="font-primary project-overlay-header-sub">
             {props.project.type.toLowerCase() == "website" ? "(or click the github icon to see the code)" : "(To-be-released via Steam, so Github is private)"}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

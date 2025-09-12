@@ -63,7 +63,8 @@
     }
 
     .project-tag {
-        background: $yellow-2;
+        // background: $grey-5;
+        background-color: rgba(darken($bg, 5), .9);
         width: min-content;
         border-radius: $radius;
         padding: 4px 8px;
@@ -73,12 +74,18 @@
         font-weight: bold;
         margin-right: .2em;
         margin-bottom: .2em;
+        color: $yellow;
     }
 
     .info-sub-header {
         font-size: $text-00;
-        color: $yellow-2;
+        // color: $grey-5;
+        color: rgba(darken($bg, 5), .9);
         font-weight: bold;
         margin-right: 1em;
+    }
+
+    .prj-info-btn {
+        color: $bg;
     }
 }

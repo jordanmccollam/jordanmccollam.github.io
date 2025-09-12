@@ -3,10 +3,27 @@
 .projects {
     position: relative;
     min-height: 110vh;
-    // padding: $space-05;
     overflow: hidden;
     text-align: center;
-    // padding-bottom: $space-08;
+
+    &-header {
+        position: relative;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .color-splash {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: $yellow;
+
+        /* Start hidden on left (small circle near left edge) */
+        clip-path: circle(0% at left center);
+        transition: clip-path 1s ease-out;
+    }
 
     .content {
         height: 100%;
