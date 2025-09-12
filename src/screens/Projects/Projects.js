@@ -82,12 +82,16 @@ const Projects = (props) => {
         <Header color={headerColor} size="md" className="pt-5 mb-5 projects-header">PROJECTS</Header>
 
         <Row className="content justify-content-center front-section">
-          {projects.map((project, i) => (
-            <Col lg={4} key={`project-${i}`} className="project-container">
-              <Project project={project} />
-              <ProjectInfo project={project} />
-            </Col>
-          ))}
+          <Col lg={8} >
+            <Row className="d-flex justify-content-center">
+              {projects.map((project, i) => (
+                <Col lg={6} key={`project-${i}`} className="project-container">
+                  <Project project={project} />
+                  <ProjectInfo project={project} />
+                </Col>
+              ))}
+            </Row>
+          </Col>
         </Row>
       
       </Container>
