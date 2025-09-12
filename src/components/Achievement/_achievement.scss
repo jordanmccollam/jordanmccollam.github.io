@@ -60,11 +60,17 @@
 
     &-description {
         position: absolute;
-        left: -21em;
-        top:-2.5em;
+        // left: -21em;
+        // top:-2.5em;
+        left: -25em;
+        top: -1em;
+
         transition: $transition;
         z-index: 3;
         pointer-events: none;
+
+        background-color: $grey-5;
+        border-radius: $radius;
 
         .description-container {
             position: relative;
@@ -72,22 +78,24 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        &-bubble {
-            width: 100%;
-            // position: absolute;
-            opacity: 0.2;
-        }
-
-        &-text {
-            font-size: $text-01;
-            position: absolute;
-            width: 65%;
+            height: 5em;
             text-align: center;
-            // top: 50%;
-            // // left: 50%;
-            // transform: translate(-50%, -50%);
         }
+
+        // &-bubble {
+        //     width: 100%;
+        //     // position: absolute;
+        //     opacity: 0.2;
+        // }
+
+        // &-text {
+        //     font-size: $text-01;
+        //     position: absolute;
+        //     width: 65%;
+        //     text-align: center;
+        //     // top: 50%;
+        //     // // left: 50%;
+        //     // transform: translate(-50%, -50%);
+        // }
     }
 }

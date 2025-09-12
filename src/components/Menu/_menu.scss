@@ -6,9 +6,17 @@
     padding-left: 10px;
     z-index: 5;
 
+    &-logo {
+        color: $yellow;
+        font-weight: bold;
+        font-size: 3.8em;
+        cursor: default;
+    }
+
     &-links {
         position: absolute;
-        top: 37vh;
+        // top: 37vh;
+        top: 20vh;
     }
 
     &-link {

@@ -45,7 +45,7 @@ const Achievement = (props) => {
 
       <div className="achievement-description" style={{opacity: showingDescription ? "1" : "0"}} >
         <div className="description-container">
-          <img src={chatBubble} alt="bubble" className="achievement-description-bubble" />
+          {/* <img src={chatBubble} alt="bubble" className="achievement-description-bubble" /> */}
           <div className="achievement-description-text" >{props.description}</div>
         </div>
       </div>

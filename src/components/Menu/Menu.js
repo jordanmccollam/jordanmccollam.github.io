@@ -100,14 +100,15 @@ const Menu = (props) => {
       {/* <img src={logo} alt="logo" className="logo" /> */}
       {/* <img src={profileCircle} alt="logo" className="profile-circle avoid-clicks" /> */}
 
-      {/* <div className="menu-links">
+      <div className="menu-links">
+        <div className="menu-logo">JM</div>
         {links.map((link, i) => (
           <div onClick={() => doAction(link.name)} key={`link-${i}`} className="menu-link" >
             <span className="menu-link-name">{link.name}</span> 
             {link.icon}
           </div>
         ))}
-      </div> */}
+      </div>
     </div>
   )
 }
