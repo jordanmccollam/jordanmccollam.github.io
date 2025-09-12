@@ -1,3 +1,15 @@
+# How to deploy changes to gh-pages
+
+NOTE - You do NOT have to be on gh-pages branch to push changes.
+For the following examples, let's say we're working on 'production' branch and have already made changes.
+
+STEP 1 - Add, commit, and push your changes to production branch like normal.
+STEP 1 - Then run 'npm run predeploy'
+STEP 2 - Then run 'npm run deploy'
+DONE - Your project and changes should be live on https://jordanmccollam.github.io/
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
