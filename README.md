@@ -1,11 +1,15 @@
 # How to deploy changes to gh-pages
 
 NOTE - You do NOT have to be on gh-pages branch to push changes.
+
 For the following examples, let's say we're working on 'production' branch and have already made changes.
 
 STEP 1 - Add, commit, and push your changes to production branch like normal.
-STEP 1 - Then run 'npm run predeploy'
-STEP 2 - Then run 'npm run deploy'
+
+STEP 2 - Then run 'npm run predeploy'
+
+STEP 3 - Then run 'npm run deploy'
+
 DONE - Your project and changes should be live on https://jordanmccollam.github.io/
 
 
