@@ -23,7 +23,7 @@ const ProjectInfo = (props) => {
         {props.children}
 
         <div className="info">
-          <h6>{props.project.type.toUpperCase()}</h6>
+          <h6>{props.project.name.toUpperCase()}</h6>
           {props.project.description}
         </div>
 

@@ -7,6 +7,7 @@ import { FaFilePdf, FaFileWord } from 'react-icons/fa';
 import smartdiary from '../../assets/projects/smartdiary.png';
 import emoball from '../../assets/projects/emoball.png';
 import billsnsheet from '../../assets/projects/billsnsheet2025.jpg'
+import instaplan from '../../assets/projects/instaplan.png'
 
 import './_projects.scss';
 
@@ -21,6 +22,7 @@ const projects = [
   //   github: 'https://github.com/jordanmccollam/smartdiary',
   //   type: "Website",
   //   description: "The Smart Diary acts as a virtual diary, but now with added smart features! Log your mood changes and the smart diary will present you with your average mood. This can be your mood for the year, or just this week!"
+  //   description: "Personal journaling app with a custom mood tracker, trend visualizations, and supportive well-being insights."
   // },
   {
     name: `BILLS N' SHEET`,
@@ -29,17 +31,28 @@ const projects = [
     tags: ['React', 'Sass', 'Javascript', 'Express.js', 'Mongoose', 'MongoDB', 'Auth0', 'Node'],
     github: 'https://github.com/jordanmccollam/BillsNSheet',
     type: "Website",
-    description: "Meet your new finance tracker. Add bills to track your total expenses and more importantly, your spending money! This is a full stack react application, complete with a database and backend."
+    // description: "Meet your new finance tracker. Add bills to track your total expenses and more importantly, your spending money! This is a full stack react application, complete with a database and authentication."
+    description: "Full-stack expense manager with secure authentication, a custom interactive table, and seemless database integration. Track your bills but more importantly, your spending money!"
   },
   {
-    name: 'EMOBALL',
-    img: emoball,
-    link: 'https://youtu.be/ttlYU7xV-eA',
-    tags: ['C#', 'Unity_Game_Engine', 'Logic_Pro_X', 'Affinity_Designer'],
-    github: 'https://github.com/jordanmccollam',
-    type: "Game", 
-    description: 'A multiplayer game where you embody emotions with unique abilities and battle for control of the human psyche! Game developed, designed, animated, and scored by Jordan.'
-  }
+    name: `INSTA-PLAN`,
+    img: instaplan,
+    link:'https://instaplan.onrender.com/',
+    tags: ['React', 'Sass', 'Javascript', 'Express.js', 'Mongoose', 'MongoDB', 'Auth0', 'Node'],
+    github: 'https://github.com/jordanmccollam/instaplan',
+    type: "Website",
+    // description: "A trello-like task manager. Also known as a bug tracker. Create, edit, track and share tasks. This app flexes understanding of databases and relational tables."
+    description: "A classic, trello-like task manager with project sharing, relational data modeling, and a drag and drop interface."
+  },
+  // {
+  //   name: 'EMOBALL',
+  //   img: emoball,
+  //   link: 'https://youtu.be/ttlYU7xV-eA',
+  //   tags: ['C#', 'Unity_Game_Engine', 'Logic_Pro_X', 'Affinity_Designer'],
+  //   github: 'https://github.com/jordanmccollam',
+  //   type: "Game", 
+  //   description: 'A multiplayer game where you embody emotions with unique abilities and battle for control of the human psyche! Game developed, designed, animated, and scored by Jordan.'
+  // }
 ]
 
 const Projects = (props) => {
