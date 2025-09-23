@@ -28,7 +28,7 @@ const projects = [
   {
     name: `BILLS N' SHEET`,
     img: billsnsheet,
-    link:'https://billsnsheet.onrender.com/',
+    link:'https://billsnsheet.up.railway.app/',
     tags: ['React', 'Sass', 'Javascript', 'Express.js', 'Mongoose', 'MongoDB', 'Auth0', 'Node'],
     github: 'https://github.com/jordanmccollam/BillsNSheet',
     type: "Website",
@@ -37,7 +37,7 @@ const projects = [
   {
     name: `INSTA-PLAN`,
     img: instaplan,
-    link:'https://instaplan.onrender.com/',
+    link:'https://instaplan.up.railway.app',
     tags: ['React', 'Sass', 'Javascript', 'Express.js', 'Mongoose', 'MongoDB', 'Auth0', 'Node'],
     github: 'https://github.com/jordanmccollam/instaplan',
     type: "Website",
