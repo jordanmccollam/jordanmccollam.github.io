@@ -8,6 +8,7 @@ import smartdiary from '../../assets/projects/smartdiary.png';
 import emoball from '../../assets/projects/emoball.png';
 import billsnsheet from '../../assets/projects/billsnsheet2025.jpg'
 import instaplan from '../../assets/projects/instaplan.png'
+import cdoez from '../../assets/projects/cdoez_landing.png'
 
 import './_projects.scss';
 
@@ -31,7 +32,6 @@ const projects = [
     tags: ['React', 'Sass', 'Javascript', 'Express.js', 'Mongoose', 'MongoDB', 'Auth0', 'Node'],
     github: 'https://github.com/jordanmccollam/BillsNSheet',
     type: "Website",
-    // description: "Meet your new finance tracker. Add bills to track your total expenses and more importantly, your spending money! This is a full stack react application, complete with a database and authentication."
     description: "Full-stack expense manager with secure authentication, a custom interactive table, and seemless database integration. Track your bills but more importantly, your spending money!"
   },
   {
@@ -41,8 +41,16 @@ const projects = [
     tags: ['React', 'Sass', 'Javascript', 'Express.js', 'Mongoose', 'MongoDB', 'Auth0', 'Node'],
     github: 'https://github.com/jordanmccollam/instaplan',
     type: "Website",
-    // description: "A trello-like task manager. Also known as a bug tracker. Create, edit, track and share tasks. This app flexes understanding of databases and relational tables."
     description: "A classic, trello-like task manager with project sharing, relational data modeling, and a drag and drop interface."
+  },
+  {
+    name: `CDOEZ FLICKS`,
+    img: cdoez,
+    link:'https://cdoezflicks.up.railway.app/',
+    tags: ['React', 'Sass', 'Javascript', 'Express.js', 'Dropbox', 'API', 'Node'],
+    github: 'https://github.com/jordanmccollam/photoportfolio',
+    type: "Website",
+    description: "This is a real professional website and portfolio built to showcase a local photographer. It features a dynamic gallery that uses the Dropbox API to pull images from his Dropbox account."
   },
   // {
   //   name: 'EMOBALL',
@@ -71,7 +79,7 @@ const Projects = (props) => {
     const progress = scrollTop / docHeight;
 
     // Map progress to circle size (0% to speed%)
-    const speed = 200;
+    const speed = 245;
     const size = 0 + progress * speed;
 
     document.querySelector(".color-splash").style.clipPath = `circle(${size}% at left center)`;

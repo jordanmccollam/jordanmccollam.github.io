@@ -72,37 +72,15 @@ const Menu = (props) => {
     console.log("LEVEL: ", state);
   }, [state])
 
-  // const handleScroll = () => {
-  //   const h = (window.innerHeight - 386);
-  //   const y = window.scrollY;
-  //   const t = 64;
-
-  //   if (y >= h && y < h+t) {setState('level-2');}
-  //   else if (y >= h+t && y < h+(t*2)) {setState('level-3');}
-  //   else if (y >= h+(t*2) && y < h+(t*3)) {setState('level-4');}
-  //   else if (y >= h+(t*3) && y < h+(t*4)) {setState('level-5');}
-  //   else if (y >= h+(t*4) && y < (h*2)+(t*5)) {
-  //     setState('level-6');
-  //     if (y >= h+(t*5)) {setLogo(logo3)} else {setLogo(logo1)}
-  //   }
-  //   else if (y >= (h*2)+(t*5) && y < (h*2)+(t*6)) {setState('level-7');}
-  //   else if (y >= (h*2)+(t*6) && y < (h*2)+(t*7)) {setState('level-8');}
-  //   else if (y >= (h*2)+(t*7) && y < (h*2)+(t*8)) {setState('level-9');}
-  //   else if (y >= (h*2)+(t*8) && y < (h*2)+(t*9)) {setState('level-10');}
-  //   else if (y >= (h*2)+(t*9)) {
-  //     setState('level-11'); 
-  //     if (y >= (h*2)+(t*10)) {setLogo(logo2)} else {setLogo(logo3)};
-  //   }
-  //   else {
-  //     setState('level-1');
-  //     setLogo(logo1);
-  //   }
-  // }
-
   const handleScroll = () => {
-    const h = (window.innerHeight - 386);
+    // const h = (window.innerHeight - 386);
+    // const y = window.scrollY;
+    // const t = 64;
+    
+    const h = (window.innerHeight - 450); // 386 is roughly the height of the menu bar so the color only changes at menu height
     const y = window.scrollY;
     const t = 64;
+    const multiplier = 4.75; // This should be changed based on section height. If section is one page multiplier = 2. After overflowing, I had to increase...
 
     // To level 7 is the project page...
     if (y >= h && y < h+t) {setState('level-2');}
@@ -110,15 +88,15 @@ const Menu = (props) => {
     else if (y >= h+(t*2) && y < h+(t*3)) {setState('level-4');}
     else if (y >= h+(t*3) && y < h+(t*4)) {setState('level-5');}
     else if (y >= h+(t*4) && y < h+(t*5)) {setState('level-6');}
-    else if (y >= h+(t*5) && y < (h*2)+(t*6)) {setState('level-7');}
+    else if (y >= h+(t*5) && y < (h*multiplier)+(t*6)) {setState('level-7');}
 
     // From here it reverses the effects
-    else if (y >= (h*2)+(t*6) && y < (h*2)+(t*7)) {setState('level-8');}
-    else if (y >= (h*2)+(t*7) && y < (h*2)+(t*8)) {setState('level-9');}
-    else if (y >= (h*2)+(t*8) && y < (h*2)+(t*9)) {setState('level-10');}
-    else if (y >= (h*2)+(t*9) && y < (h*2)+(t*10)) {setState('level-11');}
-    else if (y >= (h*2)+(t*10) && y < (h*2)+(t*11)) {setState('level-12');}
-    else if (y >= (h*2)+(t*11)) {setState('level-13');}
+    else if (y >= (h*multiplier)+(t*6) && y < (h*multiplier)+(t*7)) {setState('level-8');}
+    else if (y >= (h*multiplier)+(t*7) && y < (h*multiplier)+(t*8)) {setState('level-9');}
+    else if (y >= (h*multiplier)+(t*8) && y < (h*multiplier)+(t*9)) {setState('level-10');}
+    else if (y >= (h*multiplier)+(t*9) && y < (h*multiplier)+(t*10)) {setState('level-11');}
+    else if (y >= (h*multiplier)+(t*10) && y < (h*multiplier)+(t*11)) {setState('level-12');}
+    else if (y >= (h*multiplier)+(t*11)) {setState('level-13');}
 
     // Keeps everything tidy and error free!
     else {setState('level-1');}
